@@ -37,7 +37,6 @@ body{
     display: flex;
     list-style: none;
     gap: 8px;
-    color: #ffffff;
 }
 
 .menu-hamburgue a {
