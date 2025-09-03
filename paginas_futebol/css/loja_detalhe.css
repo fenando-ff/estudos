@@ -43,3 +43,15 @@ main {
     border-radius: 8px;
 }
 
+.container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.container div {
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
