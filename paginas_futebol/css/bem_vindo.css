@@ -53,6 +53,13 @@ body {
     align-items: center;
     height: 30px;
     
+    
+}
+
+.bemvindo-btn.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
 }
 
 .bemvindo-escudo {
