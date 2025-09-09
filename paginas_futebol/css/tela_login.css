@@ -1,0 +1,103 @@
+body{
+    height: 100vh;
+    height: 100vh;
+    background: radial-gradient(circle at center, #014ac9 10%, #001A4A 100%);
+    height: 100vh;
+}
+
+main{
+    height: 100vh;
+    margin: 0;
+    width: 0;
+    display: flex;
+    
+}
+
+.conteiner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 80px 55px;
+    border: 2px solid rgba(201, 201, 201, 0.493);  /*borda mais suave */
+    border-radius: 20px;
+    background: rgba(0, 28, 79, 0.3); /* cor semitransparente */
+    backdrop-filter: blur(50px); /* o blur no fundo */
+}
+
+    
+
+
+.conteiner h2{
+    position: absolute;
+    top: 20%;
+    color: #F7C02B ;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    letter-spacing: 16%;
+} 
+
+.caixa{
+    margin: 10px 50px;
+    border: 1px solid white;
+    color: transparent;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid white ;
+    border-radius: 15px;
+}  
+
+
+
+
+ .caixa input{
+    width: 200px;
+    height: 30px  ;
+    color: aliceblue; 
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+}
+
+.caixa input::placeholder{
+    color: aliceblue;
+    
+}
+
+
+.caixa i{
+    color: aliceblue;
+    position: absolute;
+    right: 60px;
+    margin-top: 7px;
+
+}
+
+
+.botao{
+    margin-top: 20px;
+    width: 220px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    transition: 0.3s;
+}
+
+
+
+.botao:hover{
+    background-color: #F7C02B;
+    scale: 1.0;
+
+}
+
+
+
+.conteiner p{
+    color: rgb(215, 231, 245);
+    text-decoration-line: none;
+    margin-top: 3%;
+}
