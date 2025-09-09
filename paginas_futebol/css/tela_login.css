@@ -18,13 +18,13 @@ main{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin: 80px 55px;
-    border: 2px solid rgba(201, 201, 201, 0.493);  /*borda mais suave */
+    margin: 120px 55px;
     border-radius: 20px;
     background: rgba(0, 28, 79, 0.3); /* cor semitransparente */
     backdrop-filter: blur(50px); /* o blur no fundo */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
+    
     
 
 
@@ -38,7 +38,7 @@ main{
 } 
 
 .caixa{
-    margin: 10px 50px;
+    margin: 10px 45px;
     border: 1px solid white;
     color: transparent;
     text-decoration: none;
@@ -50,35 +50,41 @@ main{
 
 
 
- .caixa input{
-    width: 200px;
-    height: 30px  ;
+.caixa input{
+    width: 170px;
+    height: 35px  ;
     color: aliceblue; 
     background-color: transparent;
     border: none;
     outline: none;
-    margin-left: 15px;
+    margin-left: 40px;
+    margin-right: 20px;
 }
 
 .caixa input::placeholder{
     color: aliceblue;
+    left: 100%;
     
+}
+    
+input[type="password"]::-ms-reveal {            /* trocando a cor do olho deixando inverso */
+  filter: invert(1);
 }
 
 
 .caixa i{
     color: aliceblue;
     position: absolute;
-    right: 60px;
-    margin-top: 7px;
+    left: 60px;
+    margin-top: 9px;
 
 }
 
 
 .botao{
-    margin-top: 20px;
-    width: 220px;
-    height: 35px;
+    margin-top: 30px;
+    width: 230px;
+    height: 40px;
     border: none;
     border-radius: 20px;
     font-size: 20px;
@@ -96,8 +102,26 @@ main{
 
 
 
-.conteiner p{
+.esqueceu_senha{
     color: rgb(215, 231, 245);
     text-decoration-line: none;
-    margin-top: 3%;
+    font-size: 14px;
+    margin-left: 120px;
 }
+
+
+
+.criat_conta{
+    margin-top: 10px;
+    color: aliceblue;
+
+}
+
+
+.criat_conta a{
+    color: #F7C02B;
+
+}
+
+
+
