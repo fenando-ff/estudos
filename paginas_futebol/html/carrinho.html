@@ -51,7 +51,7 @@
                             <ul class="info-produto">
                                 <li class="item-info-produto">Cerâmica chinesa</li>
                                 <li class="item-info-produto">Tamanho:<span>300ml</span></li>
-                                <li class="item-info-produto"><span>R$70,00</span></li>
+                                <li class="item-info-produto">R$<span class="valor-produto">70,00</span></li>
                             </ul>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                             <ul class="info-produto">
                                 <li class="item-info-produto">Cerâmica chinesa</li>
                                 <li class="item-info-produto">Tamanho:<span>300ml</span></li>
-                                <li class="item-info-produto"><span>R$70,00</span></li>
+                                <li class="item-info-produto"><span >R$70,00</span></li>
                             </ul>
                         </div>
                     </div>
@@ -116,9 +116,22 @@
         </section>
 
         <section class="forma-pagamento">
-            <div class="preco">
-                <h1>TOTAL</h1>
-                <p>R$<span>2000,00</span></p>
+            <div class="precos-totais">
+                <div class="valor-total">
+                    <h1>TOTAL</h1>
+                    <p>R$<span>2000,00</span></p>
+                </div>
+                <div class="valor-geral">
+                    <p>Valor original: R$<span class="valor-original">500,00</span></p>
+                    <p>Desconto sócio: R$<span class="desconto-socio">60,50</span></p>
+                </div>
+            </div>
+            <div class="opcoes-pagamento">
+                <h2>FORMAS DE PAGAMENTO</h2>
+                <p class="opcao-pag pix">pix</p>
+                <p class="opcao-pag debito">débito</p>
+                <p class="opcao-pag credito">crédito</p>
+                <p class="opcao-pag boleto">boleto</p>
             </div>
         </section>
 
@@ -127,5 +140,6 @@
     <footer>&copy;2025 Senac</footer>
 
     <script src="../js/main.js"></script>
+    <script src="../js/carrinho.js"></script>
 </body>
 </html>

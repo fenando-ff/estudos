@@ -25,6 +25,7 @@ body {
 
 .container-itens {
     width: 100%;
+    margin-bottom: 40px;
 }
 
 .item {
@@ -105,3 +106,41 @@ body {
     padding: 8px;
 }
 
+.forma-pagamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 50vh;
+    margin: auto;
+    padding: 8px;
+    text-align: center;
+    background-color: black;
+    border-radius: 16px;
+}
+
+.precos-totais {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+
+
+.opcoes-pagamento {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.opcoes-pagamento .opcao-pag {
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 8px;
+    width: 50%;
+    text-transform: uppercase;
+}
