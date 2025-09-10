@@ -1,0 +1,107 @@
+main {
+    width: 100%;
+    color: #ffffff;
+}
+
+.fa-arrow-circle-left{
+    color: #ffffff;
+    font-size: 50px;
+    padding: 8px;
+}
+
+body {
+    background-color: #001694;
+}
+
+.titulo {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-bottom: 1px solid red;
+    width: 60%;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+
+.container-itens {
+    width: 100%;
+}
+
+.item {
+    width: 95%;
+    margin: auto;
+    padding: 8px;
+}
+
+.produto {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.caixa-selecao {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#caixa[type="checkbox"] {
+  width: 20px; /* Define a largura do checkbox */
+  height: 20px; /* Define a altura do checkbox */
+  accent-color: white;
+}
+
+#caixa[type="checkbox"]:checked {
+    accent-color: red;
+}
+
+.img-descricao {
+    flex: 7;
+    width: 20%;
+    display: flex;
+    /* justify-content: center; */
+    padding: 4px;
+}
+
+.img-descricao .img {
+    width: 30%;
+    background-size: contain;
+    background-repeat: no-repeat;    
+}
+
+.img-descricao .img-1 {
+    background-image: url(../img/img_caneca.png);
+}
+
+.img-descricao .img-2 {
+    background-image: url(../img/img_mochila.png);
+}
+
+.img-descricao .img-3 {
+    background-image: url(../img/img_meias_treino.png);
+}
+
+.img-descricao .descricao {
+    text-align: start;
+    width: 50%;
+}
+
+.img-descricao .descricao .titulo-descricao {
+    font-size: 20px;
+}
+
+.descricao .titulo-descricao {
+    color: yellow;
+}
+
+.info-produto {
+    list-style: none;
+}
+
+.btn-qtd {
+    margin: auto;
+    width: 95%;
+    text-align: end;
+    padding: 8px;
+}
+
