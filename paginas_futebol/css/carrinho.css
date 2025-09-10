@@ -48,25 +48,46 @@ body {
 #caixa[type="checkbox"] {
   width: 20px; /* Define a largura do checkbox */
   height: 20px; /* Define a altura do checkbox */
+  accent-color: white;
+}
+
+#caixa[type="checkbox"]:checked {
+    accent-color: red;
 }
 
 .img-descricao {
     flex: 7;
     width: 20%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 4px;
 }
 
 .img-descricao .img {
-    width: 50%;
-    background-image: url(../img/img_caneca.png);
+    width: 30%;
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;    
+}
+
+.img-descricao .img-1 {
+    background-image: url(../img/img_caneca.png);
+}
+
+.img-descricao .img-2 {
+    background-image: url(../img/img_mochila.png);
+}
+
+.img-descricao .img-3 {
+    background-image: url(../img/img_meias_treino.png);
 }
 
 .img-descricao .descricao {
+    text-align: start;
+    width: 50%;
+}
 
+.img-descricao .descricao .titulo-descricao {
+    font-size: 20px;
 }
 
 .descricao .titulo-descricao {
