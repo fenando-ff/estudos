@@ -1,8 +1,7 @@
 body{
     height: 100vh;
-    height: 100vh;
     background: radial-gradient(circle at center, #014ac9 10%, #001A4A 100%);
-    height: 100vh;
+
 }
 
 main{
@@ -18,10 +17,10 @@ main{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin: 120px 55px;
+    margin: 100px 60px;
     border-radius: 20px;
-    background: rgba(0, 28, 79, 0.3); /* cor semitransparente */
-    backdrop-filter: blur(50px); /* o blur no fundo */
+    background: rgba(0, 28, 79, 0.3); 
+    backdrop-filter: blur(50px); 
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
     
@@ -30,7 +29,6 @@ main{
 
 .conteiner h2{
     text-align: center;
-
     color: #F7C02B ;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 40px;
@@ -40,8 +38,8 @@ main{
 
 .termos{
     font-size: 15px;
-     text-align: center;
-     color: aliceblue;
+    text-align: center;
+    color: aliceblue;
 }
 
 
@@ -50,8 +48,8 @@ main{
     text-align: center;
     transform-origin: center; 
     opacity: 90%;
-    width: 230px;
-    height: 160px;
+    width: 220px;
+    height: 140px;
     margin-bottom: 25%;
     margin-top: 25%;
 }
@@ -90,14 +88,14 @@ main{
 
 
 input:focus {
-  outline: none;              /* tira a borda azul padrão */
-  background-color: transparent; /* deixa sem cor */
-  box-shadow: none;           /* remove brilho */
+  outline: none;             
+  background-color: transparent; 
+  box-shadow: none;           
 }
 
 
 
-input[type="password"]::-ms-reveal {            /* trocando a cor do olho deixando inverso */
+input[type="password"]::-ms-reveal {            
   filter: invert(1);
 }
 
