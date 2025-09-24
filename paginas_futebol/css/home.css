@@ -279,3 +279,31 @@ a {
     color: yellow;
     font-size: larger;
 }
+
+.noticias {
+    width: 90%;
+    height: 200px;  
+    margin: auto;
+}
+
+.noticia1 {
+    flex: 1;
+    background-image: ;
+}
+
+.noticias .noticia-2e3 {
+    flex: 1;
+    display: flex;
+}
+
+.noticia2 {
+    flex: 1;
+    background-color: #F72B2B;
+    background-image: ;
+}
+
+.noticia3 {
+    flex: 1;
+    background-color: #001BB2;
+    background-image: ;
+}
