@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplos de grid-template-columns</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #333;
+    }
+
+    .grid {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 20px;
+      background-color: #e0e0ff;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .item {
+      background-color: #3f51b5;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .repeat {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .fixed {
+      grid-template-columns: 200px 200px 200px;
+    }
+
+    .fraction {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    .auto {
+      grid-template-columns: auto auto auto;
+    }
+
+    .repeat{
+        grid-template-columns: (3 minmax(150x, 1fr));
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Exemplos de grid-template-columns</h1>
+
+  <h2>1. repeat(3, 1fr)</h2>
+  <div class="container ex1">
+    <div class="item">Coluna 1</div>
+    <div class="item">Coluna 2</div>
+    <div class="item">Coluna 3</div>
+  </div>
+
+  <h2>2. 200px 200px 200px</h2>
+  <div class="container ex2">
+    <div class="item">Fixa 200px</div>
+    <div class="item">Fixa 200px</div>
+    <div class="item">Fixa 200px</div>
+  </div>
+
+  <h2>3. 1fr 2fr</h2>
+  <div class="container ex3">
+    <div class="item">1fr (parte)</div>
+    <div class="item">2fr (parte)</div>
+  </div>
+
+  <h2>4. auto auto auto</h2>
+  <div class="grid auto">
+    <div class="item">auto</div>
+    <div class="item">auto</div>
+    <div class="item">auto</div>
+  </div>
+
+  <h2>5. repeat(3, mimax(150x, 1fr))</h2>
+  <div class="grid auto">
+    <div class="item">Coluna 1</div>
+    <div class="item">Coluna 2</div>
+    <div class="item">Coluna 3</div>
+  </div>
+
+
+</body>
+</html>
