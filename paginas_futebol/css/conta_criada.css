@@ -1,0 +1,144 @@
+
+body{
+    height: 100vh;
+    background: radial-gradient(circle at center, #014ac9 10%, #001A4A 100%);
+
+}
+
+main{
+    height: 100vh;
+    margin: 0;
+    width: 0;
+    display: flex;
+    
+}
+
+.conteiner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px 60px;
+    border-radius: 20px;
+    background: rgba(0, 28, 79, 0.3); 
+    backdrop-filter: blur(50px); 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+.conteiner h2{
+    position: absolute;
+    top: 90px;
+    text-align: center;
+    color: #F7C02B ;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    letter-spacing: 1%;
+} 
+
+.conta_criada{ 
+    text-align: center;
+    transform-origin: center; 
+    opacity: 90%;
+    width: 180px;
+    height: 170px;
+    margin: 0px 70px;
+    margin-bottom: 15%;
+    margin-top: 30%;
+}
+
+
+
+
+
+
+
+.botao{
+    margin: 30px 0px 40px 0px;
+    width: 230px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    transition: 0.3s;
+}
+
+
+
+.botao:hover{
+    background-color: #b32108;
+    color: aliceblue;
+    scale: 1.0s;
+
+}
+
+.etapas {
+  display: flex; /* coloca tudo na horizontal */
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* espaçamento entre as etapas */
+}
+
+.etapa {
+  position: relative; /* necessário para o ::after se posicionar */
+}
+
+
+
+.circulo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #d5d5d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(53, 53, 53);
+  font-weight: bold;
+}
+
+
+.uxx{
+    background-color: #b32108;
+
+
+}
+
+.doixx{
+    background-color: #b32108;
+    color: #ffffff;
+}
+
+.trexx{
+    background-color: #b32108;
+    color: #ffffff;
+}
+
+/* Linha entre as bolinhas */
+.etapa:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 40px;   /* comprimento da linha */
+  height: 4px;   /* espessura */
+  background-color: #c7c7c7;
+  transform: translateY(-50%);
+}
+
+.dois:not(:last-child)::after {
+    background-color: #b32108;
+
+}
+
+.um:not(:last-child)::after {
+    background-color: #b32108;
+
+}
+
+.tres:not(:last-child)::after {
+    background-color: #b32108;
+
+}
