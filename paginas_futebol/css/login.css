@@ -25,7 +25,15 @@ main{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
     
-    
+
+.fa-arrow-left{
+    color: #e6e6e6;
+    position: absolute;
+    font-size: 40px;
+    margin: 0px;
+    top: 20px;
+    left: 30px;
+}
 
 
 .conteiner h2{
@@ -93,7 +101,6 @@ input[type="password"]::-ms-reveal {            /* trocando a cor do olho deixan
 
 
 .botao{
-
     margin-top: 30px;
     width: 230px;
     height: 40px;

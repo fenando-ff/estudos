@@ -1,5 +1,6 @@
 main {
-    background: linear-gradient(180deg,#001694 0%,#171717 60%);
+    /* background: linear-gradient(180deg,#001694 0%,#171717 60%); */
+    background-color: rgb(0, 25, 138);
     color: #ffffff;
     height: 90vh;
 }
@@ -8,10 +9,11 @@ main {
     color: #ffffff;
     font-size: 50px;
     margin: 8px;
+    margin-top: 30px;
 }
 
 .card {
-    background-color: #101010;
+    background-color: #001653;
     width: 80%;
     height: 30%;
     border-radius: 28px;
@@ -94,7 +96,7 @@ main {
     padding: 12px;
     border-radius: 16px;
     font-size: large;
-    background-color: #171717;
+    background-color:  transparent;
     color: #ffffff;
     width: 55%;
 }
