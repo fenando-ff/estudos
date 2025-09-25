@@ -12,57 +12,98 @@
 <body>
     <header class="cabecalho">
         <a class="logo" href="#">
-            <img src="../img/escudo_aguia_maraba.png" alt="escudo do águia de marabá">
+            <img src="../img/escudo_aguia_maraba.png" alt="escudo do Águia de Marabá">
             <h1>Águia de Marabá</h1>
         </a>
-            <ul class="menu-hamburgue">
-                <li><a href="bem_vindo.html">Login</a></li>
-                <li id="botao_hamburguer"><a href="#">Outros</a></li>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping" style="color: yellow;"></i></a></li>
-            </ul> 
+        <ul class="menu-hamburgue">
+            <li><a href="bem_vindo.html">Login</a></li>
+            <li id="botao_hamburguer"><a href="#">Outros</a></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping" style="color: yellow;"></i></a></li>
+        </ul> 
     </header>
+
     <div class="nav">
         <ul class="hamburguer-opcoes">
             <li class="opcao-nav"><a href="loja_detalhe.html">Loja</a></li>
-            <li class="opcao-nav"><a href="noticia;html">Notícias</a></li>
+            <li class="opcao-nav"><a href="noticia.html">Notícias</a></li>
             <li class="opcao-nav"><a href="historia.html">História</a></li>
             <li class="opcao-nav"><a href="login.html">Login</a></li>
             <li class="opcao-nav"><a href="ingresso.html">Ingressos</a></li>
             <li class="opcao-nav"><a href="socio.html">Sócios</a></li>
         </ul>
     </div>
+
     <main>
         <h1>Compra de Ingressos</h1>
- <section class="titulo-ingresso">
-    <div class="rodada-info">
-        <h3>19ª Rodada</h3>
-    </div>
-    <h2>Águia de Marabá x Flamengo</h2>
-    <div class="logos-times">
-        <img src="../img/escudo_aguia_maraba.png" alt="Águia de Marabá">
-        <span>vs</span>
-        <img src="../img/image.png" alt="Flamengo">
-    </div>
-</section>
+
+        <section class="titulo-ingresso">
+            <div class="rodada-info">
+                <h3>19ª Rodada</h3>
+            </div>
+            <h2>Águia de Marabá x Flamengo</h2>
+            <div class="logos-times">
+                <img src="../img/escudo_aguia_maraba.png" alt="Águia de Marabá">
+                <span>vs</span>
+                <img src="../img/image.png" alt="Flamengo">
+            </div>
+        </section>
 
         <form class="form-setor">
-    <label for="setor">Setor:</label>
-    <select id="setor" name="setor">
-        <option value="ladoA_arquibancada_anda">Lado A Arquibancada Anda</option>
-        <option value="ladoA_cadeira_cativa">Lado A Cadeira Cativa</option>
-        <option value="ladoA_arquibancada_cima">Lado A Arquibancada Cima</option>
-        <option value="ladoB_arquibancada_anda">Lado B Arquibancada Anda</option>
-        <option value="ladoB_cadeira_cativa">Lado B Cadeira Cativa</option>
-        <option value="ladoB_arquibancada_cima">Lado B Arquibancada Cima</option>
-        <option value="ladoA_cadeira_ladoB_cima">Lado A Cadeira / Lado B Arquibancada Cima</option>
-    </select>
+            <label for="setor">Setor:</label>
+            <select id="setor" name="setor">
+                <option value="ladoA_arquibancada_anda">Lado A Arquibancada Anda</option>
+                <option value="ladoA_cadeira_cativa">Lado A Cadeira Cativa</option>
+                <option value="ladoA_arquibancada_cima">Lado A Arquibancada Cima</option>
+                <option value="ladoB_arquibancada_anda">Lado B Arquibancada Anda</option>
+                <option value="ladoB_cadeira_cativa">Lado B Cadeira Cativa</option>
+                <option value="ladoB_arquibancada_cima">Lado B Arquibancada Cima</option>
+                <option value="ladoA_cadeira_ladoB_cima">Lado A Cadeira / Lado B Arquibancada Cima</option>
+            </select>
 
-    <label for="quantity">Quantidade (De 1 até 5):</label>
-    <input type="number" id="quantidade" name="quantidade" min="1" max="5">
-    <p class="preco-ingresso">Preço total: <strong id="preco-total">R$60,00</strong></p>
-    <button type="submit" class="botao-comprar">Comprar Ingresso</button>
-</form>
+            <label for="quantidade">Quantidade (De 1 até 5):</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" max="5">
+            <p class="preco-ingresso">Preço total: <strong id="preco-total">R$60,00</strong></p>
+            <button type="submit" class="botao-comprar">Comprar Ingresso</button>
+        </form>
 
+        <section class="resumo-compra" id="resumo-compra" style="display: none;">
+            <h3>Resumo da Compra</h3>
+            <p><strong>Setor escolhido:</strong> <span id="setor-escolhido"></span></p>
+            <p><strong>Quantidade de ingressos:</strong> <span id="quantidade-escolhida"></span></p>
+        </section>
+
+        <!-- ✅ Lista de Ingressos Estática
+        <section class="lista-ingressos">
+            <h3>Lista de preços do ingressos estatica</h3>
+            <ul>
+                <li>Setor: Lado A Arquibancada Anda — Quantidade: 2 — Preço: R$120,00</li>
+                <li>Setor: Lado B Cadeira Cativa — Quantidade: 1 — Preço: R$60,00</li>
+                <li>Setor: Lado A Cadeira / Lado B Arquibancada Cima — Quantidade: 3 — Preço: R$180,00</li>
+            </ul>
+        </section> -->
+
+        <section class="lista-ingressos">
+  <h3>Ingressos Selecionados</h3>
+  <ul>
+    <li class="item-ingresso">
+      <div class="info-ingresso">
+        <p><strong>Setor:</strong> Lado A Arquibancada Anda</p>
+        <p><strong>Quantidade:</strong> 2</p>
+        <p><strong>Preço:</strong> R$120,00</p>
+      </div>
+      <button class="botao-excluir">Excluir</button>
+    </li>
+    <li class="item-ingresso">
+      <div class="info-ingresso">
+        <p><strong>Setor:</strong> Lado B Cadeira Cativa</p>
+        <p><strong>Quantidade:</strong> 1</p>
+        <p><strong>Preço:</strong> R$60,00</p>
+      </div>
+      <button class="botao-excluir">Excluir</button>
+    </li>
+    <!-- Adicione mais <li> conforme necessário -->
+  </ul>
+</section>
 
         <section class="mapa-estadio">
             <h3>Mapa do Estádio</h3>
@@ -70,12 +111,8 @@
         </section>
     </main>
 
-    <!-- 📌 Rodapé -->
     <footer>
         <p>&copy; Águia de Marabá</p>
     </footer>
-
-    <!-- 🔧 Script -->
-    <script src="../js/main.js"></script>
 </body>
 </html>
