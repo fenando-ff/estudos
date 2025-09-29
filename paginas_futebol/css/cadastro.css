@@ -146,29 +146,6 @@ input[type="password"]::-ms-reveal {            /* trocando a cor do olho deixan
 
 
 
-.botao{
-    margin-top: 40px;
-    margin-bottom: 50px;
-    width: 230px;
-    height: 50px;
-    border: none;
-    border-radius: 20px;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-    transition: 0.3s;
-}
-
-
-
-.botao:hover{
-    background-color: #b32108;
-    color: aliceblue;
-    scale: 1.0s;
-
-}
-
-
-
 .etapas {
   display: flex; /* coloca tudo na horizontal */
   justify-content: center;

@@ -1,44 +1,35 @@
 body{
-background-color: #212020;
-
+background-color: #818181;
 }
-
 :root {
   /* 🎨 Botoão primario */
   --btn-font: 'Oswald', sans-serif;
   --btn-font-size: 20px;
+  --btn-margin: 15px 10px;
   --btn-radius: 12px;
   --btn-transition: 0.3s;
   --btn-width: 230px;
-  --btn-height: 60px;
+  --btn-height: 50px;
   --btn-border: none;
 
 
     /* 🎨 Botoão secundario */
   --btn2-width: 230px;
-  --btn2-height: 60px;
+  --btn2-height: 50px;
+  --btn2-margin: 30px 10px;
   --btn2-border: none;
-  --btn2-radius: 30px;
+  --btn2-radius: 12px;
   --btn2-font-size: 20px;
   --btn2-font-family: 'Oswald', sans-serif;
   --btn2-transition: 0.3s;
   --btn2-background-color: #001A4A;
   --btn2-COLOR:#f0f0f0;
 
-      /* 🎨 Botoão três */
-  --btn3-width: 230px;
-  --btn3-height: 60px;
-  --btn3-border: none;
-  --btn3-radius: 30px;
-  --btn3-font-size: 20px;
-  --btn3-font-family: 'Oswald', sans-serif;
-  --btn3-transition: 0.3s;
-
       /* 🎨 Botoão quatro */
   --btn4-width: 230px;
   --btn4-height: 60px;
   --btn4-border: solid 1px, #f0f0f0;
-  --btn4-radius: 30px ;
+  --btn4-radius: 12px ;
   --btn4-font-size: 20px;
   --btn4-font-family: 'Oswald', sans-serif;
   --btn4-transition: 0.3s;
@@ -52,15 +43,9 @@ background-color: #212020;
   --btn-text-primario-hover: #000;
 
   --btn2-bg-secundario: #b32108;
-  --btn2-bg-secundario-hover: #4d0c02;
-  --btn2-text-secundario: #fff;
-
-
-  --btn3-bg-terceiro: #e0e0e0;
-  --btn3-bg-terceiro-hover: #b32108;
-  --btn3-text-terceiro: #2c2c2c;
-  --btn3-text-terceiro-hover:#ececec;
-
+  --btn2-bg-secundario-hover: #e4e4e4;
+  --btn2-text-secundario: #f3f3f3;
+  --btn2-text-secunadrio-hover:rgb(66, 66, 66);
 
   --btn4-bg-quarto: transparent ;
   --btn4-bg-quarto-hover: #e6b803;
@@ -69,8 +54,9 @@ background-color: #212020;
 
 }
 
+/* @media screen (max()) {
 
-
+} */
 
 .btn-primario {
   font-family: var(--btn-font);
@@ -82,6 +68,7 @@ background-color: #212020;
   background-color: var(--btn-bg-primario);
   color: var(--btn-bg-primario-hover);
   transition: var(--btn-transition);
+  margin: var(--btn-margin);
   
 }
 .btn-primario:hover {
@@ -96,6 +83,7 @@ background-color: #212020;
 
   font-family: var(--btn2-font-family);
   font-size: var(--btn2-font-size);
+  margin: var(--btn2-margin);
   width: var(--btn2-width);
   height: var(--btn2-height);
   border: var(--btn2-border);
@@ -107,32 +95,9 @@ background-color: #212020;
 
 }
 .btn-secundario:hover {
-  background-color: var(--btn2-bg-secundario-hover)
+  background-color: var(--btn2-bg-secundario-hover);
+  color: var(--btn2-text-secunadrio-hover)
 }
-
-
-
-
-.btn-tres {
-  
-  font-family: var(--btn3-font-family);
-  font-size: var(--btn3-font-size);
-  width: var(--btn3-width);
-  height: var(--btn3-height);
-  border: var(--btn3-border);
-  border-radius: var(--btn3-radius);
-  background-color: var(--btn3-bg-terceiro);
-  color: var(--btn3-text-terceiro);
-  transition: var(--btn3-transition);
-
-}
-
-.btn-tres:hover {
-  background-color: var(--btn3-bg-terceiro-hover);
-  color: var(--btn3-text-terceiro-hover)
-  
-}
-
 
 
 .btn-quatro{
@@ -149,7 +114,7 @@ background-color: #212020;
 }
 
 .btn-quatro:hover {
-  
+
   background-color: var(--btn4-bg-quarto-hover);
   color: var(--btn4-text-quarto-hover)
   
