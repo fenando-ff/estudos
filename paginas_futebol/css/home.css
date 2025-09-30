@@ -278,8 +278,13 @@ a {
     padding: 16px;
     color: yellow;
     font-size: larger;
+    margin-bottom: 64px;
 }
 
+.titulo_noticias {
+    color: yellow;
+    text-align: center;
+}
 .noticias {
     width: 90%;
     height: 200px;  
@@ -288,7 +293,9 @@ a {
 
 .noticia1 {
     flex: 1;
-    background-image: ;
+    width: 100px;
+    height: 100px;
+
 }
 
 .noticias .noticia-2e3 {
@@ -299,11 +306,9 @@ a {
 .noticia2 {
     flex: 1;
     background-color: #F72B2B;
-    background-image: ;
 }
 
 .noticia3 {
     flex: 1;
     background-color: #001BB2;
-    background-image: ;
 }
