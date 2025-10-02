@@ -33,10 +33,6 @@
         </ul>
     </div>
 
-
-
-
-
     <main>
         <div  class = "conteiner">
             <div id="area_seta">
@@ -46,13 +42,13 @@
 
             
             <div class = "caixa usuario">
-                <input  placeholder="Email / Tel" type="text">
+                <input id="email" placeholder="Email / Tel" type="text">
                 <i class='bx bx-user'></i>
             </div>
 
 
             <div class = "caixa senha">
-                <input  placeholder="Senha" type="password">
+                <input id="senha"  placeholder="Senha" type="password">
                 <i class='bx bx-lock'></i>
             </div>
            
@@ -63,10 +59,12 @@
                 </a>
              </div>
 
-             <button class = "botao">Entrar</button>
+             <button class="botao" onclick="login()">Entrar</button>
 
     
-            <p class = "criat_conta">Não tem conta? <a href="cadastro.html">Cadastrar-se</a></p>
+            <p class="criar-conta">Não tem conta? <a href="cadastro.html">Cadastrar-se</a></p>
+
+            <p id="aviso"></p>
         
 
             
@@ -74,6 +72,6 @@
      </main>
     <footer>&copy;</footer>
     <script src="../js/main.js"></script>
-    <script src="../js/desafio.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 </html>
