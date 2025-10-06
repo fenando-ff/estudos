@@ -88,3 +88,33 @@ footer {
     padding: 10px;
     margin: 8px 0px 0px 0px;
 }
+
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        height: 80px;
+    }
+
+    .menu-hamburgue {
+        display: none;
+    }
+
+    .nav {
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-self: end;
+    }
+
+    .logo {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        text-decoration: none;
+    }
+
+    .hamburguer-opcoes {
+
+    }
+}
