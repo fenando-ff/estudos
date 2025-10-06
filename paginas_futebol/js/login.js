@@ -8,11 +8,11 @@ function login() {
     let confPassword = "fernando123"
 
     switch (user, password) {
-        case user === confUser && password === confPassword:
+        case user == confUser && password == confPassword:
             aviso.style.color = "#2aff6d";
             aviso.innerHTML = "Login realizado com sucesso ✅";
             break;
-            case user === confUser && password !== confPassword:
+        case user === confUser && password !== confPassword:
             aviso.style.color = "#ff4646ff";
             aviso.innerHTML = "Senha não confere ❌";
             break;
@@ -20,7 +20,7 @@ function login() {
             aviso.style.color = "#ff4646ff";
             aviso.innerHTML = "Usuário não confere ❌";
             break;
-            default:
+        default:
             if ((user == "" || password == "") || (user == "" && password == "")) {
                 aviso.innerHTML = "Preencha todos os campos!";
             } else {
