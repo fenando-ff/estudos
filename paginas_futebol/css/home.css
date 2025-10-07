@@ -84,7 +84,9 @@ a {
 .versus-jogo .time-casa,
 .versus-jogo .time-fora {
     flex: 1;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .versus-jogo .fa-xmark {
@@ -309,6 +311,11 @@ a {
     .titulo .fa-star { 
         font-size: 36px; 
     }
+    
+    .card3 img { 
+        width: 50%;
+        max-width: 200px;
+    }
 
     .card3 a { 
         width: 80%; 
@@ -342,7 +349,7 @@ a {
     }
 
     .card3 img { 
-        width: 70%; 
+        width: 50%; 
     }
 
     .proximo-jogo .proximo-jogo-versus { 
@@ -373,7 +380,8 @@ a {
     }
 
     .card3 img { 
-        width: 60%; 
+        width: 16%;
+        min-width: 100px;
     }
 
     .proximo-jogo .proximo-jogo-versus { 

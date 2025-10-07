@@ -7,7 +7,7 @@ function login() {
     let confUser = "fernando"
     let confPassword = "fernando123"
 
-    if (user == confUser && password == confPassword){
+    if (user === confUser && password === confPassword){
         aviso.style.color = "#2aff6d";
         aviso.innerHTML = "Login realizado com sucesso ✅";
     } else if ((user == "" || password == "") || (user == "" && password == "")) {
@@ -23,5 +23,6 @@ function login() {
         aviso.style.color = "#ff4646ff";
         aviso.innerHTML = "Acesso Negado ❌";
     };
-    
+
 };
+

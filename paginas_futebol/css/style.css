@@ -54,7 +54,7 @@ body{
     justify-content: end;
     position: absolute;
     z-index: 9999;
-    
+    margin-top: 15.5rem;
 }
 
 .hamburguer-opcoes {
@@ -112,9 +112,5 @@ footer {
         align-items: center;
         justify-content: start;
         text-decoration: none;
-    }
-
-    .hamburguer-opcoes {
-
     }
 }
