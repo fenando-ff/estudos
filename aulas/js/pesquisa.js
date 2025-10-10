@@ -15,27 +15,27 @@ document.addEventListener("DOMContentLoaded", () =>{ // tá esperando a página 
             btn.style.boxShadow = "0px 2px 4px #707070";
         };
     });
+
+    btn.addEventListener("click", () => { // espera clicar no botão
+            let texto = entrada.value;
+            let li = document.createElement("li");
+
+            li.className = "item-lista"
+            lista.appendChild(li);
+            li.innerHTML = `<span id="nome-tarefa">${texto}</span>
+                            <div class="btns">
+                                <button id="feito" onclick="marcar()"><i class="fa-solid fa-check"></i></button>
+                                <button id="deletar" onclick="deletar()"><i class="fa-solid fa-xmark"></i></button>
+                            </div>`;
+    });
+
+
     entrada.dispatchEvent(new Event("input")); // Faz com que funcione a mudança do botão corretamente ao carregar a página
 });
 
-function adicionarTarefa() {
-    let texto = entrada.value;
-    let li = document.createElement("li");
-
-    li.className = "item-lista"
-    lista.appendChild(li);
-    li.innerHTML = `<span class="nome-tarefa">${texto} </span>
-                    <div class="btns">
-                        <button id="feito" onclick="marcar()"><i class="fa-solid fa-check"></i></button>
-                        <button id="deletar" onclick="deletar()"><i class="fa-solid fa-xmark"></i></button>
-                    </div>`
-
-    entrada.value = ""
-};
-
-
 function marcar() {
-
+    let tarefa = document.getElementById("nome-tarefa");
+    tarefa.style.textDecoration = "line-through";
 };
 
 function deletar() {
