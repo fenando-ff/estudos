@@ -1,7 +1,7 @@
 body{
     height: 100vh;
     height: 100vh;
-    background: radial-gradient(circle at center, #014ac9 10%, #001A4A 100%);
+    background: radial-gradient(circle at center, #8F0000 10%, #0F0F0F 100%);
     height: 100vh;
 }
 
@@ -20,7 +20,7 @@ main{
     justify-content: center;
     margin: 120px 55px;
     border-radius: 20px;
-    background: rgba(0, 28, 79, 0.3); /* cor semitransparente */
+    background: 8F0000(0, 28, 79, 0.3); /* cor semitransparente */
     backdrop-filter: blur(50px); /* o blur no fundo */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -28,21 +28,17 @@ main{
 
 .fa-arrow-left{
     color: #e6e6e6;
-    position: absolute;
     font-size: 40px;
-    margin: 0px;
-    top: 20px;
-    left: 30px;
+    margin: 0px 180px 0px 0px;
 }
 
 
 .conteiner h2{
-    position: absolute;
-    top: 20%;
-    color: #F7C02B ;
+    margin: 40px 0px 30px 0px;
+    color: #0F0F0F ;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 60px;
-    letter-spacing: 16%;
+
 } 
 
 .caixa{
@@ -122,12 +118,14 @@ input[type="password"]::-ms-reveal {            /* trocando a cor do olho deixan
 .criat_conta{
     margin-top: 10px;
     color: aliceblue;
+    margin-bottom: 100px;
 
 }
 
 
 .criat_conta a{
     color: #F7C02B;
+    
 
 }
 

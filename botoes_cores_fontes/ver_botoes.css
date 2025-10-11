@@ -6,19 +6,19 @@ background-color: #818181;
   --btn-font: 'Oswald', sans-serif;
   --btn-font-size: 20px;
   --btn-margin: 15px 10px;
-  --btn-radius: 12px;
+  --btn-radius: 10px;
   --btn-transition: 0.3s;
   --btn-width: 230px;
   --btn-height: 50px;
-  --btn-border: none;
+  
 
 
     /* 🎨 Botoão secundario */
   --btn2-width: 230px;
   --btn2-height: 50px;
   --btn2-margin: 30px 10px;
-  --btn2-border: none;
-  --btn2-radius: 12px;
+  --btn2-border: transparent;
+  --btn2-radius: 10px;
   --btn2-font-size: 20px;
   --btn2-font-family: 'Oswald', sans-serif;
   --btn2-transition: 0.3s;
@@ -37,15 +37,20 @@ background-color: #818181;
 
 
   /* Cores principais */
-  --btn-bg-primario: #001A4A;
+  --btn-bg-primario: transparent;
   --btn-bg-primario-hover: #f0f0f0;
-  --btn-text-primario: #f0f0f0;
-  --btn-text-primario-hover: #000;
+  --btn-text-primario: #8F0000;
+  --btn-text-primario-hover: #8F0000;
+  --btn-border: solid 1px, white;
+  --btn-border-hover: solid 1px, rgb(159, 0, 0);
+
+
 
   --btn2-bg-secundario: #b32108;
   --btn2-bg-secundario-hover: #e4e4e4;
   --btn2-text-secundario: #f3f3f3;
-  --btn2-text-secunadrio-hover:rgb(66, 66, 66);
+  --btn2-text-secunadrio-hover:rgb(30, 30, 30);
+  --btn2-border-hover: 1px solid, rgb(0, 0, 0);
 
   --btn4-bg-quarto: transparent ;
   --btn4-bg-quarto-hover: #e6b803;
@@ -74,6 +79,7 @@ background-color: #818181;
 .btn-primario:hover {
   background-color: var(--btn-bg-primario-hover);
   color: var(--btn-text-primario-hover);
+  border: var(--btn-border-hover);
 
 }
 
@@ -96,26 +102,9 @@ background-color: #818181;
 }
 .btn-secundario:hover {
   background-color: var(--btn2-bg-secundario-hover);
-  color: var(--btn2-text-secunadrio-hover)
+  color: var(--btn2-text-secunadrio-hover);
+  border: var(--btn2-border-hover);
 }
 
 
-.btn-quatro{
-  font-family: var(--btn4-font-family);
-  font-size: var(--btn4-font-size);
-  width: var(--btn4-width);
-  height: var(--btn4-height);
-  border: var(--btn4-border);
-  border-radius: var(--btn4-radius);
-  background-color: var(--btn4-bg-quarto);
-  color: var(--btn4-text-quarto);
-  transition: var(--btn4-transition);
 
-}
-
-.btn-quatro:hover {
-
-  background-color: var(--btn4-bg-quarto-hover);
-  color: var(--btn4-text-quarto-hover)
-  
-}
