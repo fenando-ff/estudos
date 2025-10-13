@@ -55,7 +55,7 @@ body{
     justify-content: end;
     position: absolute;
     z-index: 9999;
-    margin-top: 15.5rem;
+    margin-top: 13rem;
 }
 
 .hamburguer-opcoes {
@@ -71,7 +71,7 @@ body{
     align-items: center;
 }
 
-.hamburguer-opcoes #btn-carrinho {
+.btn-esconde {
         display: none;
     }
 
@@ -108,7 +108,7 @@ footer {
 
     .nav {
         position: static;
-        width: 500px;
+        width: 28rem;
         display: flex;
         justify-content: start;
         margin-top: 0;
@@ -118,9 +118,10 @@ footer {
         display: flex;
         flex-direction: row;
         background: none;
+        width: 28rem;
     }
 
-    .hamburguer-opcoes #btn-carrinho {
+    .hamburguer-opcoes .btn-esconde {
         display: block;
     }
 
