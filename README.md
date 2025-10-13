@@ -99,6 +99,32 @@ Todas as versões (Desktop, Web e Mobile) estão conectadas a um **único banco 
 
 ---
 
+## Rodando localmente
+
+Clone o projeto
+
+```bash
+  git clone https://github.com/fenando-ff/projeto_futebol
+```
+
+Entre no diretório do projeto
+
+```bash
+  cd projeto_futebol
+```
+
+Instale as dependências
+
+```bash
+  pip install -r requirements.txt
+```
+
+Inicie o servidor
+
+```bash
+  python manage.py runserver
+```
+
 ## Estrutura de Desenvolvimento
 
 - **Arquitetura escalável e modular**
