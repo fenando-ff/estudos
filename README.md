@@ -1,0 +1,27 @@
+Clube de futebol – Equipe Drakos
+Essa plataforma digital na qual estamos fazendo e uma plataforma completa para um time de futebol, que foi pensada para oferecer uma experiência única tanto para os torcedores quanto para a administração do time. Bem a ideia de projeto e criar o sistema sólido, capaz de suportar muitos usuários e transações sem travar, garantindo que tudo funcione de forma integrada.
+A plataforma conta com o banco de dados feito no mySqlWorkbench, onde as informações vão ser guardadas e acessadas facilmente, que tem em todas as versões: Desktop, Web e Mobile. A versão em Desktop é ideal para quem usa computador e ideal para os funcionários que terão a acesso a plataforma e que dependendo do login e senha eles vão ter acesso a sua tela e poderá mudar as coisas dentro da sua respectiva responsabilidade, já a versão web será responsiva e rodará bem em qualquer dispositivo e navegador e a versão mobile vai garantir bastante praticidade para os torcedores acessarem tudo diretamente pelo celular.
+Além do mais vai ter um sistema de gestão de usuários, onde os torcedores do time poderão se cadastrar, fazer login se já possuir um cadastro, gerenciar seu perfil e acessar áreas exclusivas. A ideia do sistema e criar um ambiente interativo e tudo que o torcedor precisar saber sobre o seu time.
+A parte comercial do projeto também é forte. A plataforma tem a parte de sócios, onde o torcedor vai poder ter acessos exclusivos a bastidores, promoções, e será possível comprar ingressos, escolher assentos e até conseguir descontos nessas coisas. Na parte do e-commerce oficial vai oferecer produtos do clube, como camisetas, bonés e outros itens personalizados. Além disso, a plataforma contará com espaços dedicados à divulgação de marcas e colaborações comerciais, criando oportunidades para empresas do setor esportivo e patrocinadores se conectarem com o público. Outra estratégia de monetização será por meio de conteúdos premium, como transmissões exclusivas de partidas, eventos online com jogadores e até recursos pagos para personalização de perfis e emblemas especiais.
+Com tudo isso, a plataforma não só gera receita continua para clube, mas também mantém os torcedores mais engajados, criando uma comunidade forte e fiel ao time.
+
+•	Comercial: A monetização acontecerá através da venda de planos de sócio aos torcedores, ingressos para os jogos, produtos no e-commerce, conteúdos pagos e publicidade, garantido um fluxo de receita contínuo e tornando a plataforma sustentável.
+•	Banco de dados transversal: Em todas as versões da plataforma (Mobile, Desktop e Web) estarão conectados a um único banco de dados, garantindo que as informações de usuários, compras, eventos e interações sejam sincronizadas e atualizadas em tempo real.
+•	Versão para desktop = Um sistema completo para quem acessa pelo computador, com interface otimizada para visualização detalhada de estatísticas, gestão do clube e interações avançadas.
+•	Versão web responsiva = A plataforma será acessível pelo navegador, se adaptando automaticamente a diferentes dispositivos, como computadores, tablets e celulares, garantindo uma boa experiência de uso.
+•	Versão mobile = Um aplicativo dedicado para smartphones, permitindo que os torcedores acessem conteúdos exclusivos, comprem ingressos, recebam notificações e interajam de qualquer lugar.
+•	Gestão de usuários = Cadastro, login e gerenciamento de perfis, com áreas exclusivas para sócios, personalização de contas e controle de permissões para diferentes tipos de usuários (torcedores, administradores, funcionários).
+
+Lista de Tecnologias
+Na construção da interface da plataforma (front-end), foram utilizadas as seguintes linguagens:
+•	HTML: Responsável pela estruturação das páginas e organização dos elementos visuais.
+•	CSS: Utilizado para estilizar os componentes da interface, garantindo um design responsivo e agradável.
+•	JavaScript: Aplicado para adicionar interatividade, dinamismo e lógica de funcionamento à experiência do usuário.
+Para o desenvolvimento da parte lógica e estrutural do sistema, foram utilizadas as seguintes tecnologias:
+
+Linguagens e Frameworks
+•	Python: Linguagem principal utilizada no back-end, conhecida por sua simplicidade, legibilidade e ampla comunidade de suporte.
+•	Django: Framework web de alto nível baseado em Python, utilizado para acelerar o desenvolvimento com segurança, escalabilidade e organização. Ele oferece recursos como autenticação de usuários, administração de dados, rotas e integração com banco de dados de forma eficiente.
+
+Banco de Dados
+•	MySQL Workbench: Ferramenta utilizada para modelagem e gerenciamento do banco de dados relacional, garantindo que todas as versões da plataforma (Desktop, Web e Mobile) estejam conectadas a uma base única e sincronizada.
