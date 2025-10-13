@@ -21,16 +21,16 @@ Oferecer um ambiente digital que una:
 
 ###  Versões da Plataforma
 
-- ** Versão Desktop:**  
+- **Versão Desktop:**  
   Voltada para funcionários e administradores do clube.  
   Permite acesso ao painel de controle completo, com gerenciamento de usuários, eventos, produtos e finanças.  
   Cada usuário acessa funcionalidades específicas de acordo com seu **login e nível de permissão**.
 
-- ** Versão Web (Responsiva):**  
+- **Versão Web (Responsiva):**  
   Desenvolvida para funcionar em qualquer navegador ou dispositivo.  
   Oferece uma experiência fluida e adaptável, ideal para torcedores e visitantes.
 
-- ** Versão Mobile:**  
+- **Versão Mobile:**  
   Aplicativo dedicado para smartphones, garantindo **acesso rápido e prático** aos conteúdos do clube, compras, notificações e eventos.
 
 ---
