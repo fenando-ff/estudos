@@ -118,7 +118,11 @@ Instale as dependências
 ```bash
   pip install -r requirements.txt
 ```
+Copie o banco de dados contido em script.db e ajuste o settings.py e rode o comando
 
+```bash
+  python manage.py makemigrations
+```
 Inicie o servidor
 
 ```bash
