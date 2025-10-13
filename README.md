@@ -1,27 +1,136 @@
-Clube de futebol – Equipe Drakos
-Essa plataforma digital na qual estamos fazendo e uma plataforma completa para um time de futebol, que foi pensada para oferecer uma experiência única tanto para os torcedores quanto para a administração do time. Bem a ideia de projeto e criar o sistema sólido, capaz de suportar muitos usuários e transações sem travar, garantindo que tudo funcione de forma integrada.
-A plataforma conta com o banco de dados feito no mySqlWorkbench, onde as informações vão ser guardadas e acessadas facilmente, que tem em todas as versões: Desktop, Web e Mobile. A versão em Desktop é ideal para quem usa computador e ideal para os funcionários que terão a acesso a plataforma e que dependendo do login e senha eles vão ter acesso a sua tela e poderá mudar as coisas dentro da sua respectiva responsabilidade, já a versão web será responsiva e rodará bem em qualquer dispositivo e navegador e a versão mobile vai garantir bastante praticidade para os torcedores acessarem tudo diretamente pelo celular.
-Além do mais vai ter um sistema de gestão de usuários, onde os torcedores do time poderão se cadastrar, fazer login se já possuir um cadastro, gerenciar seu perfil e acessar áreas exclusivas. A ideia do sistema e criar um ambiente interativo e tudo que o torcedor precisar saber sobre o seu time.
-A parte comercial do projeto também é forte. A plataforma tem a parte de sócios, onde o torcedor vai poder ter acessos exclusivos a bastidores, promoções, e será possível comprar ingressos, escolher assentos e até conseguir descontos nessas coisas. Na parte do e-commerce oficial vai oferecer produtos do clube, como camisetas, bonés e outros itens personalizados. Além disso, a plataforma contará com espaços dedicados à divulgação de marcas e colaborações comerciais, criando oportunidades para empresas do setor esportivo e patrocinadores se conectarem com o público. Outra estratégia de monetização será por meio de conteúdos premium, como transmissões exclusivas de partidas, eventos online com jogadores e até recursos pagos para personalização de perfis e emblemas especiais.
-Com tudo isso, a plataforma não só gera receita continua para clube, mas também mantém os torcedores mais engajados, criando uma comunidade forte e fiel ao time.
+# Clube de Futebol – Equipe Drakos
 
-•	Comercial: A monetização acontecerá através da venda de planos de sócio aos torcedores, ingressos para os jogos, produtos no e-commerce, conteúdos pagos e publicidade, garantido um fluxo de receita contínuo e tornando a plataforma sustentável.
-•	Banco de dados transversal: Em todas as versões da plataforma (Mobile, Desktop e Web) estarão conectados a um único banco de dados, garantindo que as informações de usuários, compras, eventos e interações sejam sincronizadas e atualizadas em tempo real.
-•	Versão para desktop = Um sistema completo para quem acessa pelo computador, com interface otimizada para visualização detalhada de estatísticas, gestão do clube e interações avançadas.
-•	Versão web responsiva = A plataforma será acessível pelo navegador, se adaptando automaticamente a diferentes dispositivos, como computadores, tablets e celulares, garantindo uma boa experiência de uso.
-•	Versão mobile = Um aplicativo dedicado para smartphones, permitindo que os torcedores acessem conteúdos exclusivos, comprem ingressos, recebam notificações e interajam de qualquer lugar.
-•	Gestão de usuários = Cadastro, login e gerenciamento de perfis, com áreas exclusivas para sócios, personalização de contas e controle de permissões para diferentes tipos de usuários (torcedores, administradores, funcionários).
+A **Plataforma Digital da Equipe Drakos** é um sistema completo desenvolvido para oferecer uma **experiência única** tanto para os torcedores quanto para a administração do clube.  
+O projeto foi idealizado para ser **robusto, escalável e integrado**, suportando múltiplos usuários e transações simultâneas sem perda de desempenho.
 
-Lista de Tecnologias
-Na construção da interface da plataforma (front-end), foram utilizadas as seguintes linguagens:
-•	HTML: Responsável pela estruturação das páginas e organização dos elementos visuais.
-•	CSS: Utilizado para estilizar os componentes da interface, garantindo um design responsivo e agradável.
-•	JavaScript: Aplicado para adicionar interatividade, dinamismo e lógica de funcionamento à experiência do usuário.
-Para o desenvolvimento da parte lógica e estrutural do sistema, foram utilizadas as seguintes tecnologias:
+---
 
-Linguagens e Frameworks
-•	Python: Linguagem principal utilizada no back-end, conhecida por sua simplicidade, legibilidade e ampla comunidade de suporte.
-•	Django: Framework web de alto nível baseado em Python, utilizado para acelerar o desenvolvimento com segurança, escalabilidade e organização. Ele oferece recursos como autenticação de usuários, administração de dados, rotas e integração com banco de dados de forma eficiente.
+## Visão Geral do Projeto
 
-Banco de Dados
-•	MySQL Workbench: Ferramenta utilizada para modelagem e gerenciamento do banco de dados relacional, garantindo que todas as versões da plataforma (Desktop, Web e Mobile) estejam conectadas a uma base única e sincronizada.
+A plataforma da **Equipe Drakos** é uma solução multiplataforma — com versões **Desktop**, **Web** e **Mobile** — todas conectadas a um **único banco de dados** centralizado no **MySQL Workbench**.
+
+### Objetivo
+Oferecer um ambiente digital que una:
+- Torcedores engajados e conectados ao clube.
+- Administração eficiente e organizada.
+- Recursos comerciais sustentáveis e automatizados.
+
+---
+
+## Funcionalidades Principais
+
+###  Versões da Plataforma
+
+- ** Versão Desktop:**  
+  Voltada para funcionários e administradores do clube.  
+  Permite acesso ao painel de controle completo, com gerenciamento de usuários, eventos, produtos e finanças.  
+  Cada usuário acessa funcionalidades específicas de acordo com seu **login e nível de permissão**.
+
+- ** Versão Web (Responsiva):**  
+  Desenvolvida para funcionar em qualquer navegador ou dispositivo.  
+  Oferece uma experiência fluida e adaptável, ideal para torcedores e visitantes.
+
+- ** Versão Mobile:**  
+  Aplicativo dedicado para smartphones, garantindo **acesso rápido e prático** aos conteúdos do clube, compras, notificações e eventos.
+
+---
+
+## Gestão de Usuários
+
+O sistema conta com um **módulo de autenticação e controle de acesso**, incluindo:
+- Cadastro e login de torcedores.  
+- Gerenciamento de perfis e informações pessoais.  
+- Áreas exclusivas para **sócios** e **administradores**.  
+- Personalização de contas e permissões específicas.
+
+---
+
+## Área Comercial e Monetização
+
+A plataforma conta com uma forte vertente comercial, abrangendo:
+
+- **Planos de Sócio:**  
+  Torcedores podem adquirir planos para acesso a bastidores, promoções e descontos exclusivos.  
+
+- **Venda de Ingressos:**  
+  Compra e escolha de assentos diretamente pela plataforma, com integração de pagamento e QR Code de entrada.
+
+- **E-commerce Oficial:**  
+  Loja virtual com produtos oficiais do clube (camisetas, bonés, itens personalizados etc.).  
+
+- **Publicidade e Parcerias:**  
+  Espaços para divulgação de marcas e patrocinadores do setor esportivo.  
+
+- **Conteúdos Premium:**  
+  Transmissões exclusivas, eventos online com jogadores e personalização de perfis com emblemas especiais.
+
+**Resultado:** Geração de receita contínua e engajamento duradouro da comunidade Drakos.
+
+---
+
+## Banco de Dados Transversal
+
+Todas as versões (Desktop, Web e Mobile) estão conectadas a um **único banco de dados MySQL**, garantindo:
+- Sincronização em tempo real.  
+- Atualizações automáticas de dados de usuários, eventos e transações.  
+- Segurança e integridade das informações.
+
+---
+
+## Tecnologias Utilizadas
+
+### Front-end
+| Tecnologia | Função |
+|-------------|--------|
+| **HTML5** | Estruturação das páginas e organização dos elementos visuais. |
+| **CSS3** | Estilização e design responsivo da interface. |
+| **JavaScript** | Interatividade, dinamismo e lógica de comportamento do usuário. |
+
+### Back-end
+| Tecnologia | Função |
+|-------------|--------|
+| **Python** | Linguagem principal pela sua simplicidade e escalabilidade. |
+| **Django** | Framework web robusto e seguro para autenticação, rotas, administração e integração com o banco de dados. |
+
+### Banco de Dados
+| Ferramenta | Função |
+|-------------|--------|
+| **MySQL Workbench** | Modelagem, gerenciamento e manutenção do banco relacional da plataforma. |
+
+---
+
+## Estrutura de Desenvolvimento
+
+- **Arquitetura escalável e modular**
+- **Integração entre versões (Desktop, Web e Mobile)**
+- **Sincronização automática de dados**
+- **Painel administrativo completo**
+- **Design responsivo e intuitivo**
+
+---
+
+## Benefícios do Sistema
+
+Experiência unificada entre todas as plataformas  
+Acesso rápido e seguro para diferentes tipos de usuários  
+Fortalecimento da comunidade e da marca Drakos  
+Sustentabilidade financeira com múltiplas fontes de receita  
+Base sólida para futuras expansões e integrações
+
+---
+
+## Conclusão
+
+A **Plataforma Drakos** não é apenas um sistema digital — é um **ecossistema completo** que conecta o clube, os torcedores e os parceiros comerciais.  
+Com ela, a **Equipe Drakos** fortalece sua presença digital e constrói uma comunidade fiel e apaixonada pelo futebol.
+
+---
+
+### Contato
+Em caso de dúvidas ou sugestões, entre em contato com a equipe de desenvolvimento Drakos.
+- pedro56438076@senac.edu.pa.br
+- fernando10744196@edu.pa.senac.br
+- nayane53507206@edu.pa.senac.br
+- emanuel57997516@edu.pa.senac.br
+
+**#EquipeDrakos • Unidos pela Paixão do Futebol**
