@@ -28,6 +28,7 @@ body{
 .logo img {
     width: 10%;
     height: 20%;
+    min-width: 24px;
 }
 
 .logo h1 {
@@ -70,6 +71,10 @@ body{
     align-items: center;
 }
 
+.hamburguer-opcoes #btn-carrinho {
+        display: none;
+    }
+
 .hamburguer-opcoes a {
     text-decoration: none;
     color: #ffffff;
@@ -89,9 +94,12 @@ footer {
     margin: 8px 0px 0px 0px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .cabecalho {
         height: 80px;
+        display: flex;
+        justify-content: space-between;
+        /* padding: 0px 16px; */
     }
 
     .menu-hamburgue {
@@ -99,18 +107,35 @@ footer {
     }
 
     .nav {
+        position: static;
         width: 500px;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        justify-self: end;
+        justify-content: start;
+        margin-top: 0;
+    }
+    
+    .hamburguer-opcoes {
+        display: flex;
+        flex-direction: row;
+        background: none;
+    }
+
+    .hamburguer-opcoes #btn-carrinho {
+        display: block;
     }
 
     .logo {
-        width: 50%;
+        width: 24rem;
         display: flex;
         align-items: center;
         justify-content: start;
         text-decoration: none;
+        margin-left: 16px;
     }
+
+    .logo img {
+        max-width: 50px;
+    }
+
+    
 }
