@@ -11,3 +11,17 @@ Com tudo isso, a plataforma não só gera receita continua para clube, mas tamb�
 •	Versão web responsiva = A plataforma será acessível pelo navegador, se adaptando automaticamente a diferentes dispositivos, como computadores, tablets e celulares, garantindo uma boa experiência de uso.
 •	Versão mobile = Um aplicativo dedicado para smartphones, permitindo que os torcedores acessem conteúdos exclusivos, comprem ingressos, recebam notificações e interajam de qualquer lugar.
 •	Gestão de usuários = Cadastro, login e gerenciamento de perfis, com áreas exclusivas para sócios, personalização de contas e controle de permissões para diferentes tipos de usuários (torcedores, administradores, funcionários).
+
+Lista de Tecnologias
+Na construção da interface da plataforma (front-end), foram utilizadas as seguintes linguagens:
+•	HTML: Responsável pela estruturação das páginas e organização dos elementos visuais.
+•	CSS: Utilizado para estilizar os componentes da interface, garantindo um design responsivo e agradável.
+•	JavaScript: Aplicado para adicionar interatividade, dinamismo e lógica de funcionamento à experiência do usuário.
+Para o desenvolvimento da parte lógica e estrutural do sistema, foram utilizadas as seguintes tecnologias:
+
+Linguagens e Frameworks
+•	Python: Linguagem principal utilizada no back-end, conhecida por sua simplicidade, legibilidade e ampla comunidade de suporte.
+•	Django: Framework web de alto nível baseado em Python, utilizado para acelerar o desenvolvimento com segurança, escalabilidade e organização. Ele oferece recursos como autenticação de usuários, administração de dados, rotas e integração com banco de dados de forma eficiente.
+
+Banco de Dados
+•	MySQL Workbench: Ferramenta utilizada para modelagem e gerenciamento do banco de dados relacional, garantindo que todas as versões da plataforma (Desktop, Web e Mobile) estejam conectadas a uma base única e sincronizada.
