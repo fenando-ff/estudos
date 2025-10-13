@@ -2,7 +2,7 @@ body{
 background-color: #818181;
 }
 :root {
-  /* 🎨 Botoão primario */
+  /*  Botoão primario */
   --btn-font: 'Oswald', sans-serif;
   --btn-font-size: 20px;
   --btn-margin: 15px 10px;
@@ -13,7 +13,7 @@ background-color: #818181;
   
 
 
-    /* 🎨 Botoão secundario */
+    /*  Botoão secundario */
   --btn2-width: 230px;
   --btn2-height: 50px;
   --btn2-margin: 30px 10px;
@@ -25,14 +25,16 @@ background-color: #818181;
   --btn2-background-color: #001A4A;
   --btn2-COLOR:#f0f0f0;
 
-      /* 🎨 Botoão quatro */
-  --btn4-width: 230px;
-  --btn4-height: 60px;
-  --btn4-border: solid 1px, #f0f0f0;
-  --btn4-radius: 12px ;
-  --btn4-font-size: 20px;
-  --btn4-font-family: 'Oswald', sans-serif;
-  --btn4-transition: 0.3s;
+      /*  Botoão tres */
+  
+  --btn3-width: 230px;
+  --btn3-border: none;
+  --btn3-height: 50px;
+  --btn3-margin: 30px 10px;
+  --btn3-radius: 10px;
+  --btn3-font-size: 20px;
+  --btn3-font-family: 'Oswald', sans-serif;
+  --btn3-transition: 0.3s;
 
 
 
@@ -52,10 +54,10 @@ background-color: #818181;
   --btn2-text-secunadrio-hover:rgb(30, 30, 30);
   --btn2-border-hover: 1px solid, rgb(0, 0, 0);
 
-  --btn4-bg-quarto: transparent ;
-  --btn4-bg-quarto-hover: #e6b803;
-  --btn4-text-quarto: white;
-  --btn4-text-quarto-hover:#ececec;
+  --btn3-bg-terceiro: #f0f0f0 ;
+  --btn3-bg-terceiro-hover: #121212;
+  --btn3-text-terceiro: #1e1e1e;
+  --btn3-text-terceiro-hover:#ececec;
 
 }
 
@@ -107,4 +109,23 @@ background-color: #818181;
 }
 
 
+.btn-terceiro{
+  font-family: var(--btn3-font-family);
+  font-size: var(--btn3-font-size);
+  margin: var(--btn3-margin);
+  width: var(--btn3-width);
+  height: var(--btn3-height);
+  border-radius: var(--btn3-radius);
+  background-color: var(--btn3-bg-terceiro);
+  color: var(--btn3-text-terceiro);
+  transition: var(--btn3-transition);
+  border: var(--btn3-border);
 
+}
+
+
+.btn-terceiro:hover{
+  color: var(--btn3-text-terceiro-hover);
+  background-color: var(--btn3-bg-terceiro-hover);
+
+}

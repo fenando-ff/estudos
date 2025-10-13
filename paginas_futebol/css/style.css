@@ -8,14 +8,29 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
 
 }
-.cabecalho {
-    background-color: #001A4A;
+
+/* novo estilo de navbar (opcional) */
+.cabecalho{
+    background: linear-gradient(180deg, #0f0f0f, #0d0d0d);
     width: 100%;
     height: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6),
+    inset 450px 1px 0 rgba(0, 0, 0, 0.2);
 }
+
+
+/* navbar original */
+/* .cabecalho {
+    background-color: #161616;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
 
 .logo {
     width: 50%;
@@ -59,7 +74,7 @@ body{
 
 .hamburguer-opcoes {
     display: flex;
-    background-color: #001A4A;
+    background-color: #161616;
     flex-direction: column;
     list-style: none;
     gap: 4px;
@@ -82,7 +97,7 @@ body{
 }
 
 footer {
-    background-color: #001A4A;
+    background-color: #161616;
     color: #ffffff;
     text-align: center;
     padding: 10px;

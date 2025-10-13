@@ -1,7 +1,7 @@
 
 body{
-    height: 100vh;
-    background: radial-gradient(circle at center, #014ac9 10%, #001A4A 100%);
+    background: radial-gradient(circle at center, #8F0000 10%, #0F0F0F 100%);
+    background-repeat: no-repeat;
 
 }
 
@@ -20,7 +20,7 @@ main{
     justify-content: center;
     margin: 100px 60px;
     border-radius: 20px;
-    background: rgba(0, 28, 79, 0.3); 
+    background: #8F0000(0, 28, 79, 0.3); 
     backdrop-filter: blur(50px); 
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -31,7 +31,7 @@ main{
     position: absolute;
     top: 90px;
     text-align: center;
-    color: #F7C02B ;
+    color: #e4e4e4 ;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 40px;
     letter-spacing: 1%;
@@ -101,18 +101,18 @@ main{
 
 
 .uxx{
-    background-color: #b32108;
+    background-color: #0F0F0F;
 
 
 }
 
 .doixx{
-    background-color: #b32108;
+    background-color: #0F0F0F;
     color: #ffffff;
 }
 
 .trexx{
-    background-color: #b32108;
+    background-color: #0F0F0F;
     color: #ffffff;
 }
 
@@ -129,16 +129,16 @@ main{
 }
 
 .dois:not(:last-child)::after {
-    background-color: #b32108;
+    background-color: #0F0F0F;
 
 }
 
 .um:not(:last-child)::after {
-    background-color: #b32108;
+    background-color: #0F0F0F;
 
 }
 
 .tres:not(:last-child)::after {
-    background-color: #b32108;
+    background-color: #0F0F0F;
 
 }
