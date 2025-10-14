@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevWeb - Aprenda JavaScript na Prática</title>
+    <meta name="description" content="Exemplo didático de desenvolvimento web com menu hamburguer e carrossel usando JavaScript">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="nav-header">
+                <!-- Logo -->
+                <div class="logo">DevWeb</div>
+                
+                <!-- Botão Hamburguer -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+            
+            <!-- Menu Links -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#carousel" class="nav-link">Carrossel</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#contact" class="nav-btn">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SEÇÃO HERO -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Aprenda <span class="gradient-text">Desenvolvimento Web</span> na Prática
+                </h1>
+                <p class="hero-description">
+                    Domine HTML, CSS e JavaScript através de exemplos práticos e interativos. 
+                    Código limpo, conceitos claros.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#carousel" class="btn btn-primary">Começar Agora</a>
+                    <a href="#about" class="btn btn-secondary">Saiba Mais</a>
+                </div>
+                
+                <!-- Cards de Tecnologias -->
+                <div class="tech-cards">
+                    <div class="tech-card">
+                        <div class="tech-icon">📝</div>
+                        <p>HTML</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">🎨</div>
+                        <p>CSS</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">⚡</div>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-glow"></div>
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop" 
+                     alt="Desenvolvimento Web" 
+                     class="main-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CARROSSEL -->
+    <section id="carousel" class="carousel-section">
+        <div class="container">
+            <h2 class="section-title gradient-text">Tecnologias Fundamentais</h2>
+            
+            <!-- Container do Carrossel -->
+            <div class="carousel-container">
+                <!-- Slides -->
+                <div class="carousel-slides" id="carouselSlides">
+                    <div class="carousel-slide active">
+                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=800&h=600&fit=crop" alt="HTML">
+                        <div class="slide-overlay"></div>
+                        <div class="slide-content">
+                            <h3>HTML</h3>
+                            <p>Estrutura e semântica da web</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800&h=600&fit=crop" alt="CSS">
+                        <div class="slide-overlay"></div>
+                        <div class="slide-content">
+                            <h3>CSS</h3>
+                            <p>Design e estilização de páginas</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=800&h=600&fit=crop" alt="JavaScript">
+                        <div class="slide-overlay"></div>
+                        <div class="slide-content">
+                            <h3>JavaScript</h3>
+                            <p>Interatividade e dinâmica</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Botões de Navegação -->
+                <button class="carousel-btn carousel-btn-prev" id="prevBtn" aria-label="Slide anterior">
+                    ‹
+                </button>
+                <button class="carousel-btn carousel-btn-next" id="nextBtn" aria-label="Próximo slide">
+                    ›
+                </button>
+                
+                <!-- Indicadores (dots) -->
+                <div class="carousel-dots" id="carouselDots">
+                    <button class="dot active" data-slide="0"></button>
+                    <button class="dot" data-slide="1"></button>
+                    <button class="dot" data-slide="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-header">
+                <h2 class="section-title gradient-text">Por Que Este Exemplo?</h2>
+                <p class="section-description">
+                    Uma demonstração completa de manipulação DOM, eventos e interatividade com JavaScript puro.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-primary">📚</div>
+                    <h3>Aprenda Fazendo</h3>
+                    <p>Exemplos práticos e código comentado para facilitar o aprendizado.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-secondary">💻</div>
+                    <h3>Código Limpo</h3>
+                    <p>Boas práticas de programação e organização de código desde o início.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-accent">💡</div>
+                    <h3>Conceitos Claros</h3>
+                    <p>Explicações detalhadas de cada funcionalidade e técnica utilizada.</p>
+                </div>
+            </div>
+            
+            <div class="cta-box">
+                <h3>Pronto para Começar a Praticar?</h3>
+                <p>Explore o código, faça modificações e veja os resultados em tempo real. Aprender fazendo é a melhor forma!</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary">Ver Documentação</button>
+                    <button class="btn btn-white">Baixar Código</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer id="contact" class="footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <!-- Coluna 1 -->
+                <div class="footer-col">
+                    <h3>DevWeb</h3>
+                    <p>Exemplo didático de desenvolvimento web com JavaScript, criado para ajudar estudantes a praticar e aprender.</p>
+                </div>
+                
+                <!-- Coluna 2 -->
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#carousel">Carrossel</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Coluna 3 -->
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul class="footer-links">
+                        <li>📧 contato@devweb.com</li>
+                        <li>🐙 GitHub</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Feito com ❤️ para fins educacionais</p>
+                <p class="footer-copyright">© 2024 DevWeb. Código aberto para aprendizado.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
