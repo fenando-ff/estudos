@@ -49,12 +49,12 @@ background-color: #818181;
 
 
   --btn2-bg-secundario: #b32108;
-  --btn2-bg-secundario-hover: #e4e4e4;
+  --btn2-bg-secundario-hover: #dfdfdf;
   --btn2-text-secundario: #f3f3f3;
   --btn2-text-secunadrio-hover:rgb(30, 30, 30);
   --btn2-border-hover: 1px solid, rgb(0, 0, 0);
 
-  --btn3-bg-terceiro: #f0f0f0 ;
+  --btn3-bg-terceiro: #d6d6d6 ;
   --btn3-bg-terceiro-hover: #121212;
   --btn3-text-terceiro: #1e1e1e;
   --btn3-text-terceiro-hover:#ececec;
