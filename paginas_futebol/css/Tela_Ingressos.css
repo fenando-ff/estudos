@@ -1,40 +1,41 @@
 /* 🔰 Reset e Fonte Base */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #000;
 }
 
 /* 🏟️ Conteúdo Principal */
 main {
-    padding: 50px 10px 13px;
-    max-width: 500px;
+    padding: 3rem 1rem 1rem;
+    max-width: 600px;
     margin: 0 auto;
 }
 main h1 {
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-align: center;
     color: #001A4A;
-    margin-bottom: 10%;
+    margin-bottom: 2rem;
 }
 
 /* 🎫 Tela de Ingressos */
-.titulo-ingresso {
-    margin-bottom: 20px;
-}
 .titulo-ingresso h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #001A4A;
     text-align: center;
-    margin: 0 auto 14px;
+    margin-bottom: 1.5rem;
 }
 
 /* 🏁 Rodada */
 .rodada-info {
     text-align: center;
-    margin-bottom: 5px;
-    margin-top: -10px;
+    margin: -0.5rem 0 1rem;
 }
 .rodada-info h3 {
     font-size: 1.3rem;
@@ -45,14 +46,15 @@ main h1 {
 /* 🆚 Logos dos Times */
 .logos-times {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 10px;
-    gap: 10px;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
 }
 .logos-times img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
 }
 .logos-times span {
@@ -65,7 +67,7 @@ main h1 {
 .form-setor {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.75rem;
 }
 .form-setor label,
 .form-setor select,
@@ -74,19 +76,14 @@ main h1 {
     width: 100%;
     font-size: 1rem;
 }
-.form-setor select {
-    padding: 12px;
+.form-setor select,
+#quantidade {
+    padding: 0.75rem;
     border: 2px solid #ccc;
     border-radius: 5px;
     font-size: 1.1rem;
-    height: 52px;
 }
 #quantidade {
-    padding: 10px 12px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    height: 56px;
     appearance: auto;
     -moz-appearance: textfield;
 }
@@ -94,7 +91,6 @@ main h1 {
 #quantidade::-webkit-outer-spin-button {
     opacity: 1;
     width: 16px;
-    height: 56px;
 }
 
 /* 💰 Preço */
@@ -109,10 +105,10 @@ main h1 {
 
 /* 🛒 Botão de Compra */
 .botao-comprar {
-    background-color: #000000;
+    background-color: #000;
     color: white;
     border: none;
-    padding: 12px;
+    padding: 0.75rem;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
@@ -124,32 +120,32 @@ main h1 {
 
 /* 📋 Resumo da Compra */
 .resumo-compra {
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 1.5rem;
+    padding: 1rem;
     border: 2px solid #001A4A;
     border-radius: 8px;
     background-color: #f5f5f5;
 }
 .resumo-compra h3 {
     color: #001A4A;
-    margin-bottom: 10px;
+    margin-bottom: 0.75rem;
 }
 .resumo-compra p {
     font-size: 1rem;
-    margin-bottom: 6px;
+    margin-bottom: 0.5rem;
 }
 
-/* 📑 Lista de Ingressos com botão de excluir */
+/* 📑 Lista de Ingressos */
 .lista-ingressos {
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 1.5rem;
+    padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 6px;
     background-color: #fafafa;
 }
 .lista-ingressos h3 {
-    color: #000000;
-    margin-bottom: 8px;
+    color: #000;
+    margin-bottom: 0.5rem;
 }
 .lista-ingressos ul {
     list-style: none;
@@ -157,12 +153,13 @@ main h1 {
 }
 .lista-ingressos .item-ingresso {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     border: 1px solid #ccc;
     border-radius: 6px;
-    padding: 10px;
-    margin-bottom: 8px;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
     background-color: #f9f9f9;
 }
 .lista-ingressos .info-ingresso p {
@@ -170,10 +167,10 @@ main h1 {
     font-size: 0.95rem;
 }
 .lista-ingressos .botao-excluir {
-    background-color: #000000;
+    background-color: #000;
     color: white;
     border: none;
-    padding: 8px 12px;
+    padding: 0.5rem 0.75rem;
     border-radius: 4px;
     cursor: pointer;
     font-size: 0.9rem;
@@ -185,15 +182,15 @@ main h1 {
 
 /* 🗺️ Mapa do Estádio */
 .mapa-estadio {
-    margin-top: 30px;
+    margin-top: 2rem;
 }
 .mapa-estadio h3 {
     text-align: center;
     color: #001A4A;
-    margin-bottom: 10px;
+    margin-bottom: 0.75rem;
 }
 .mapa-estadio img {
-    width: 75%;
+    width: 100%;
     max-width: 550px;
     height: auto;
     display: block;
@@ -202,54 +199,43 @@ main h1 {
 
 /* 📌 Rodapé */
 footer {
-    background-color: #000000;
+    background-color: #000;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 1.25rem;
+    margin-top: 2.5rem;
     font-size: 0.9rem;
 }
 
 /* 📱 Responsivo */
-@media (max-width: 500px) {
-    .logos-times {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+@media (max-width: 600px) {
+    main {
+        padding: 2rem 1rem;
     }
     .logos-times img {
-        width: 48px;
+        width: 50px;
+        height: 50px;
     }
     .logos-times span {
         font-size: 1.3rem;
-    }
-    .titulo-ingresso {
-        margin-top: -25px;
-        margin-bottom: 15px;
     }
     .form-setor select,
     .botao-comprar,
     #quantidade,
     #preco-total {
-        width: 100%;
-        font-size: 1.1rem;
-        height: 45px;
-    }
-    .resumo-compra,
-    .lista-ingressos {
-        font-size: 0.9rem;
-        padding: 8px;
+        font-size: 1rem;
+        height: auto;
     }
     .lista-ingressos .item-ingresso {
         flex-direction: column;
         align-items: flex-start;
     }
     .lista-ingressos .botao-excluir {
-        margin-top: 8px;
+        margin-top: 0.5rem;
         align-self: flex-end;
     }
     footer {
         font-size: 0.8rem;
-        padding: 10px;
+        padding: 1rem;
     }
 }
