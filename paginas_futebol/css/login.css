@@ -1,22 +1,24 @@
 body{
     background: radial-gradient(circle at center, #8F0000 10%, #0F0F0F 100%);
     background-repeat: no-repeat;
+
 }
 
 main{
     height: 100vh;
-    margin: 0;
-    width: 0;
+    width: 100%;
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+
 }
 
 .conteiner{
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-    margin: 120px 55px;
+    padding: 40px 30px;
+    margin: 120px 65px;
     border-radius: 20px;
     background: #8F0000(0, 28, 79, 0.3); /* cor semitransparente */
     backdrop-filter: blur(50px); /* o blur no fundo */
@@ -27,7 +29,7 @@ main{
 .fa-arrow-left{
     color: #e6e6e6;
     font-size: 40px;
-    margin: 0px 180px 0px 0px;
+    margin: 0px 220px 0px 0px;
 }
 
 
@@ -39,29 +41,27 @@ main{
 
 } 
 
-.caixa{
-    margin: 10px 45px;
+.caixa {
+    display: flex;
+    align-items: center;
+    gap: 10px;                   /* Espaço entre ícone e input */
+    margin: 10px 0;
     border: 1px solid white;
-    color: transparent;
-    text-decoration: none;
-    background-color: transparent;
-    border: 1px solid white ;
     border-radius: 15px;
-}  
+    padding: 8px 15px;
+    background-color: transparent;
+}
 
 
 
 
-.caixa input{
-    width: 170px;
-    height: 35px  ;
-    color: aliceblue; 
+.caixa input {
+    flex: 1;                     /* Faz o input ocupar o espaço restante */
+    height: 20px;
+    color: aliceblue;
     background-color: transparent;
     border: none;
     outline: none;
-    margin-left: 40px;
-    margin-right: 20px;
-
 }
 
 .caixa input::placeholder{
@@ -87,10 +87,8 @@ input[type="password"]::-ms-reveal {            /* trocando a cor do olho deixan
 
 .caixa i{
     color: aliceblue;
-    position: absolute;
-    left: 60px;
-    margin-top: 9px;
-
+    font-size: 18px;
+    flex-shrink: 0;              /* Impede o ícone de encolher */
 }
 
 
