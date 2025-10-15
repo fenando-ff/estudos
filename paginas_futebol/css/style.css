@@ -90,6 +90,13 @@ body{
     padding: 4px;
     text-align: start;
 }
+.hamburguer-opcoes .opcao-nav a {
+    transition: 0.3s;
+}
+
+.hamburguer-opcoes .opcao-nav a:hover {
+        color: #8F0000;
+    }
 
 footer {
     background-color: #161616;
@@ -103,8 +110,6 @@ footer {
     .cabecalho {
         height: 80px;
         display: flex;
-        justify-content: space-between;
-        /* padding: 0px 16px; */
     }
 
     .menu-hamburgue {
@@ -136,12 +141,11 @@ footer {
         align-items: center;
         justify-content: start;
         text-decoration: none;
-        margin-left: 16px;
+        margin-right: 16rem;
     }
 
     .logo img {
         max-width: 50px;
     }
-
     
 }
