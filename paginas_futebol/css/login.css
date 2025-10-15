@@ -1,7 +1,6 @@
 body{
-    height: 100vh;
-    height: 100vh;
-    background: radial-gradient(circle at center, #014ac9 10%, #001A4A 100%);
+    background: radial-gradient(circle at center, #8F0000 10%, #0F0F0F 100%);
+    background-repeat: no-repeat;
 }
 
 main{
@@ -19,7 +18,7 @@ main{
     justify-content: center;
     margin: 120px 55px;
     border-radius: 20px;
-    background: rgba(0, 28, 79, 0.3); /* cor semitransparente */
+    background: #8F0000(0, 28, 79, 0.3); /* cor semitransparente */
     backdrop-filter: blur(50px); /* o blur no fundo */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -27,21 +26,17 @@ main{
 
 .fa-arrow-left{
     color: #e6e6e6;
-    position: absolute;
     font-size: 40px;
-    margin: 0px;
-    top: 20px;
-    left: 30px;
+    margin: 0px 180px 0px 0px;
 }
 
 
 .conteiner h2{
-    position: absolute;
-    top: 20%;
-    color: #F7C02B ;
+    margin: 40px 0px 50px 0px;
+    color: #d2d2d2 ;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 60px;
-    letter-spacing: 16%;
+
 } 
 
 .caixa{
@@ -99,18 +94,6 @@ input[type="password"]::-ms-reveal {            /* trocando a cor do olho deixan
 }
 
 
-.botao{
-    margin-top: 30px;
-    width: 230px;
-    height: 40px;
-    border: none;
-    border-radius: 20px;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-    transition: 0.3s;
-}
-
-
 
 .botao:hover{
     background-color: #b32108;
@@ -131,12 +114,14 @@ input[type="password"]::-ms-reveal {            /* trocando a cor do olho deixan
 .criar-conta{
     margin-top: 10px;
     color: aliceblue;
-    margin-bottom: 12px;
+    margin-bottom: 100px;
+
 }
 
 
 .criar-conta a{
     color: #F7C02B;
+    
 
 }
 
