@@ -1,7 +1,5 @@
 /* 🔰 Reset e Fonte Base */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 body {
@@ -80,7 +78,7 @@ main {
     margin: 0 auto;
 }
 main h1 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     text-align: center;
     color: #001A4A;
     margin-bottom: 10%;
@@ -91,7 +89,7 @@ main h1 {
     margin-bottom: 20px;
 }
 .titulo-ingresso h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #001A4A;
     text-align: center;
     margin: 0 auto 14px;
@@ -104,7 +102,7 @@ main h1 {
     margin-top: -10px;
 }
 .rodada-info h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #001A4A;
     font-weight: bold;
 }
@@ -176,7 +174,7 @@ main h1 {
 
 /* 🛒 Botão de Compra */
 .botao-comprar {
-    background-color: #001A4A;
+    background-color: #000000;
     color: white;
     border: none;
     padding: 12px;
@@ -215,7 +213,7 @@ main h1 {
     background-color: #fafafa;
 }
 .lista-ingressos h3 {
-    color: #001A4A;
+    color: #000000;
     margin-bottom: 8px;
 }
 .lista-ingressos ul {
@@ -237,7 +235,7 @@ main h1 {
     font-size: 0.95rem;
 }
 .lista-ingressos .botao-excluir {
-    background-color: #001A4A;
+    background-color: #000000;
     color: white;
     border: none;
     padding: 8px 12px;
@@ -260,8 +258,8 @@ main h1 {
     margin-bottom: 10px;
 }
 .mapa-estadio img {
-    width: 100%;
-    max-width: 600px;
+    width: 75%;
+    max-width: 550px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -269,12 +267,13 @@ main h1 {
 
 /* 📌 Rodapé */
 footer {
-    background-color: #001A4A;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
     font-size: 0.9rem;
+    /* font-weight: bold; */
 }
 
 /* 📱 Responsivo */
@@ -299,7 +298,7 @@ footer {
     #quantidade,
     #preco-total {
         width: 100%;
-        font-size: 1.1rem;
+        font-size: 1.1rem; 
         height: 45px;
     }
     .resumo-compra,
