@@ -38,7 +38,6 @@ main{
     color: #d2d2d2 ;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 60px;
-
 } 
 
 .caixa {
@@ -67,8 +66,6 @@ main{
 .caixa input::placeholder{
     color: aliceblue;
     left: 100%;
-
-
 }
 
 
@@ -127,3 +124,40 @@ input[type="password"]::-ms-reveal {            /* trocando a cor do olho deixan
     color: #F7C02B;
 }
 
+@media screen and (min-width: 768px) {
+    .conteiner {
+        width: 60%;
+    }
+
+    .fa-arrow-left{
+        margin: 0rem 770px 0px 0px;
+    }
+
+    .box,  .caixa, .esqueceu_senha {
+        width:30%;
+    }
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .conteiner {
+        width: 50%;
+    }
+
+    .fa-arrow-left{
+        margin: 0rem 350px 0px 0px;
+    }
+
+    .box,  .caixa, .esqueceu_senha {
+        width:30%;
+    }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1920px){
+    .fa-arrow-left{
+         margin: 0rem 630px 0px 0px;
+    }
+
+}

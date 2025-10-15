@@ -7,28 +7,29 @@ body{
 
 main{
     height: 100vh;
-    margin: 0;
-    width: 0;
+    width: 100%;
     display: flex;
-    
-}
+    justify-content: center;
+    align-items: center;
 
-.fa-arrow-left{
-    color: #e6e6e6;
-    font-size: 40px;
-    margin: 0px 200px 0px 0px;
 }
 
 .conteiner{
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-    margin: 100px 60px;
+    padding: 10px 30px;
+    margin: 100px 65px;
     border-radius: 20px;
-    background: #8F0000(0, 28, 79, 0.3); 
-    backdrop-filter: blur(50px); 
+    background: #8F0000(0, 28, 79, 0.3); /* cor semitransparente */
+    backdrop-filter: blur(50px); /* o blur no fundo */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.fa-arrow-left{
+    color: #e6e6e6;
+    font-size: 40px;
+    margin: 0px 200px 0px 0px;
 }
     
 .informando{
@@ -50,38 +51,33 @@ main{
 .img_senha{ 
     text-align: center;
     transform-origin: center; 
-    opacity: 90%;
-    width: 180px;
-    height: 170px;
+    opacity: 80%;
+    width: 130px;
+    height: 130px;
     margin-bottom: 15%;
     margin-top: 5%;
 }
 
 
 
-.caixa{
-    margin: 10px 45px;
+.caixa {
+    display: flex;
+    align-items: center;
+    gap: 10px;                   /* Espaço entre ícone e input */
+    margin: 10px 0;
     border: 1px solid white;
-    color: transparent;
-    text-decoration: none;
-    background-color: transparent;
-    border: 1px solid white ;
     border-radius: 15px;
-}  
+    padding: 8px 15px;
+    background-color: transparent;
+}
 
-
-
-
-.caixa input{
-    width: 170px;
-    height: 35px  ;
-    color: aliceblue; 
+.caixa input {
+    flex: 1;                     /* Faz o input ocupar o espaço restante */
+    height: 20px;
+    color: aliceblue;
     background-color: transparent;
     border: none;
     outline: none;
-    margin-left: 40px;
-    margin-right: 20px;
-
 }
 
 .caixa input::placeholder{
@@ -106,11 +102,11 @@ input[type="password"]::-ms-reveal {
 
 
 .caixa i{
-    color: rgb(218, 218, 218);
-    position: absolute;
-    left: 60px;
-    margin-top: 9px;
+    color: aliceblue;
+    font-size: 18px;
+    flex-shrink: 0;              /* Impede o ícone de encolher */
 }
+
 
 
 
@@ -137,6 +133,7 @@ input[type="password"]::-ms-reveal {
 }
 
 .etapas {
+  margin-bottom: 10px;  
   display: flex; /* coloca tudo na horizontal */
   justify-content: center;
   align-items: center;
