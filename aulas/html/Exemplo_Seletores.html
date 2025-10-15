@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exemplo DOM Seletores</title>
+    <style>
+        .destaque{
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Aprendendo Seletores DOM</h1>
+    <p class="texto">Primeiro parágrafo</p>
+    <p class="texto">Segundo parágrafo</p>
+    <p class="texto">Terceiro parágrafo</p>
+    <button onclick="usarGetElementById()">Usar usarGetElementById</button>
+    <button onclick="UsarQuerySelector()">Usar UsarQuerySelector</button>
+    <button onclick="UsarQuerySelectorAll()">Usar UsarQuerySelectorAll</button>
+    <button onclick="usarGetElementsByClassName()">Usar usarGetElementsByClassName</button>
+    
+    <p id="resultado">
+    
+    <script>
+        function usarGetElementById(){
+            let titulo = document.getElementById('titulo');
+            document.getElementById('resultado').innerText = 'getElementById' + titulo.innerText;
+            titulo.style.color = 'red';
+        }
+        function UsarQuerySelector(){
+            let primeiroParagrafo = document.querySelector('.texto');
+            document.getElementById('resultado').innerText = 'querySelector pegou: ' + primeiroParagrafo.innerText;
+            titulo.style.color = 'green';
+        }
+        function UsarQuerySelectorAll(){
+            let paragrafos = document.querySelectorAll('.texto');
+            let textos = '';
+            for (let i = 0; i < paragrafos.length; i++){
+                textos += paragrafos[i].innerText + ' | ';
+                paragrafos[i].style.fontStyle = 'italic';
+            }
+            document.getElementById('resultado').innerText = 'querySelectorAll pegou: ' + textos;
+        }
+        function usarGetElementsByClassName(){
+            let paragrafos = document.getElementsByClassName("texto");
+            let textos = '';
+            for (let i = 0; i < paragrafos.lenght; i++){
+                textos += paragrafos[i].innerText + ' | ';
+                paragrafos[i].classList.add('destaque');
+            }
+            document.getElementById('resultado').innerText = 'getElemetsByClassName pegou: ' + textos;
+        }
+     </script>
+    </body>
+    </html>

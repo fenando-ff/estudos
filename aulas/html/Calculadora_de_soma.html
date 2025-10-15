@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Calculadora_de_soma.css">
+    <title>Calculadora de Operações</title>
+</head>
+<body>
+    <div class="container">
+
+        <h2>Calculadora de Operações</h2>
+
+        <label for="num1">Primeiro número</label>
+        <input type="number" id="numero1">
+
+        <label for="num2">Segundo número</label>
+        <input type="number" id="numero2">
+
+        <!-- Seletor de operação -->
+        <label for="operacao">Operação</label>
+        <select id="operacao">
+            <option value="soma">Soma</option>
+            <option value="subtracao">Subtração</option>
+            <option value="multiplicacao">Multiplicação</option>
+            <option value="divisao">Divisão</option>
+        </select>
+
+        <button onclick="calcularSoma()">Calcular</button>
+
+        <p id="Resultado"></p>
+        <p class="instrucoes">Insira os números, escolha a operação e clique em "Calcular"</p>
+    
+        <script src="calculadora_de_soma.js"></script>
+
+    </div>
+</body>
+</html>

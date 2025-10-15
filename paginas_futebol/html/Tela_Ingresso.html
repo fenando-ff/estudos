@@ -11,28 +11,27 @@
 </head>
 <body>
     <header class="cabecalho">
-        <a class="logo" href="#">
-            <img src="../img/escudo_aguia_maraba.png" alt="escudo do Águia de Marabá">
-            <h1>Águia de Marabá</h1>
+        <a class="logo" href="index.html">
+            <img src="../img/logo_time_drako 3.png" alt="escudo do águia de marabá">
+            <h1>DRAKOS FC</h1>
         </a>
         <ul class="menu-hamburgue">
-            <li><a href="bem_vindo.html">Login</a></li>
+            <li><a href="login.html">Login</a></li>
             <li id="botao_hamburguer"><a href="#">Outros</a></li>
-            <li><a href="#"><i class="fa-solid fa-cart-shopping" style="color: yellow;"></i></a></li>
+            <li><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul> 
+        <div class="nav">
+            <ul class="hamburguer-opcoes">
+                <li class="opcao-nav"><a href="loja_detalhe.html">Loja</a></li>
+                <li class="opcao-nav"><a href="noticias.html">Notícias</a></li>
+                <li class="opcao-nav"><a href="historia.html">História</a></li>
+                <li class="opcao-nav btn-esconde"><a href="login.html">Login</a></li>
+                <li class="opcao-nav"><a href="ingresso.html">Ingressos</a></li>
+                <li class="opcao-nav"><a href="socio.html">Sócios</a></li>
+                <li class="btn-esconde"><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
     </header>
-
-    <div class="nav">
-        <ul class="hamburguer-opcoes">
-            <li class="opcao-nav"><a href="loja_detalhe.html">Loja</a></li>
-            <li class="opcao-nav"><a href="noticia.html">Notícias</a></li>
-            <li class="opcao-nav"><a href="noticias.html">Notícias</a></li>
-            <li class="opcao-nav"><a href="historia.html">História</a></li>
-            <li class="opcao-nav"><a href="login.html">Login</a></li>
-            <li class="opcao-nav"><a href="ingresso.html">Ingressos</a></li>
-            <li class="opcao-nav"><a href="socio.html">Sócios</a></li>
-        </ul>
-    </div>
 
     <main>
         <h1>Compra de Ingressos</h1>
@@ -41,12 +40,17 @@
             <div class="rodada-info">
                 <h3>19ª Rodada</h3>
             </div>
-            <h2>Águia de Marabá x Flamengo</h2>
+            <h2>Drakos FC x Flamengo</h2>
             <div class="logos-times">
-                <img src="../img/escudo_aguia_maraba.png" alt="Águia de Marabá">
+                <img src="../img/logo_time_drako 3.png" alt="Drakos FC">
                 <span>vs</span>
                 <img src="../img/image.png" alt="Flamengo">
             </div>
+        </section>
+
+        <section class="mapa-estadio">
+            <h3>Mapa do Estádio</h3>
+            <img src="../img/mapa_estadio.png" alt="Mapa do Estádio com setores">
         </section>
 
         <form class="form-setor">
@@ -73,47 +77,32 @@
             <p><strong>Quantidade de ingressos:</strong> <span id="quantidade-escolhida"></span></p>
         </section>
 
-        <!-- ✅ Lista de Ingressos Estática
         <section class="lista-ingressos">
-            <h3>Lista de preços do ingressos estatica</h3>
+            <h3>Ingressos Selecionados</h3>
             <ul>
-                <li>Setor: Lado A Arquibancada Anda — Quantidade: 2 — Preço: R$120,00</li>
-                <li>Setor: Lado B Cadeira Cativa — Quantidade: 1 — Preço: R$60,00</li>
-                <li>Setor: Lado A Cadeira / Lado B Arquibancada Cima — Quantidade: 3 — Preço: R$180,00</li>
+                <li class="item-ingresso">
+                    <div class="info-ingresso">
+                        <p><strong>Setor:</strong> Lado A Arquibancada Anda</p>
+                        <p><strong>Quantidade:</strong> 2</p>
+                        <p><strong>Preço:</strong> R$120,00</p>
+                    </div>
+                    <button class="botao-excluir">Excluir</button>
+                </li>
+                <li class="item-ingresso">
+                    <div class="info-ingresso">
+                        <p><strong>Setor:</strong> Lado B Cadeira Cativa</p>
+                        <p><strong>Quantidade:</strong> 1</p>
+                        <p><strong>Preço:</strong> R$60,00</p>
+                    </div>
+                    <button class="botao-excluir">Excluir</button>
+                </li>
             </ul>
-        </section> -->
-
-        <section class="lista-ingressos">
-  <h3>Ingressos Selecionados</h3>
-  <ul>
-    <li class="item-ingresso">
-      <div class="info-ingresso">
-        <p><strong>Setor:</strong> Lado A Arquibancada Anda</p>
-        <p><strong>Quantidade:</strong> 2</p>
-        <p><strong>Preço:</strong> R$120,00</p>
-      </div>
-      <button class="botao-excluir">Excluir</button>
-    </li>
-    <li class="item-ingresso">
-      <div class="info-ingresso">
-        <p><strong>Setor:</strong> Lado B Cadeira Cativa</p>
-        <p><strong>Quantidade:</strong> 1</p>
-        <p><strong>Preço:</strong> R$60,00</p>
-      </div>
-      <button class="botao-excluir">Excluir</button>
-    </li>
-    <!-- Adicione mais <li> conforme necessário -->
-  </ul>
-</section>
-
-        <section class="mapa-estadio">
-            <h3>Mapa do Estádio</h3>
-            <img src="../img/mapa_estadio.png" alt="Mapa do Estádio com setores">
         </section>
     </main>
 
     <footer>
-        <p>&copy; Águia de Marabá</p>
+        <p>&copy; Drakos FC</p>
     </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>
