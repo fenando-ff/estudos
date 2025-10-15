@@ -82,13 +82,13 @@ background-color: #818181;
   background-color: var(--btn-bg-primario-hover);
   color: var(--btn-text-primario-hover);
   border: var(--btn-border-hover);
+  cursor: pointer;
 
 }
 
 
 
 .btn-secundario {
-
   font-family: var(--btn2-font-family);
   font-size: var(--btn2-font-size);
   margin: var(--btn2-margin);
@@ -106,6 +106,8 @@ background-color: #818181;
   background-color: var(--btn2-bg-secundario-hover);
   color: var(--btn2-text-secunadrio-hover);
   border: var(--btn2-border-hover);
+  cursor: pointer;
+
 }
 
 
@@ -127,5 +129,6 @@ background-color: #818181;
 .btn-terceiro:hover{
   color: var(--btn3-text-terceiro-hover);
   background-color: var(--btn3-bg-terceiro-hover);
+  cursor: pointer;
 
 }
