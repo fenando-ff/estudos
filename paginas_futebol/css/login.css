@@ -28,9 +28,18 @@ main{
     
 
 .fa-arrow-left{
-    color: #e6e6e6;
-    font-size: 40px;
-    margin: 0px 220px 0px 0px;
+  color: #e6e6e6;
+  font-size: 2.5rem;
+  color: #e6e6e6;
+  font-size: 2.5rem;
+  margin-right: 20px; /* margem menor e mais equilibrada */
+  width: 5%;
+  text-align: left;
+}
+
+    
+#area_seta {
+    width: 100%;
 }
 
 
@@ -44,8 +53,8 @@ main{
 .caixa {
     display: flex;
     align-items: center;
-    gap: 10px;                   /* Espaço entre ícone e input */
-    margin: 10px 0;
+    gap: auto;                   /* Espaço entre ícone e input */
+    margin: 10px 0PX;
     border: 1px solid white;
     border-radius: 15px;
     padding: 8px 15px;
@@ -128,17 +137,22 @@ input[type="password"]::-ms-reveal {            /* trocando a cor do olho deixan
     color: #F7C02B;
 }
 
+
+/* celular */
 @media screen and (min-width: 768px) {
     .conteiner {
         width: 60%;
     }
 
-    .fa-arrow-left{
+    /* .fa-arrow-left{
         margin: 0rem 770px 0px 0px;
-    }
+    } */
 
-    .box,  .caixa  {
-        width:30%;
+    .box{
+        width:10%;
+    }
+    .caixa{
+        gap: 1%;
     }
 
     .esqueceu_senha{
@@ -147,15 +161,15 @@ input[type="password"]::-ms-reveal {            /* trocando a cor do olho deixan
 }
 
 
-
+/* tablete */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .conteiner {
         width: 50%;
     }
 
-    .fa-arrow-left{
+    /* .fa-arrow-left{
         margin: 0rem 350px 0px 0px;
-    }
+    } */
 
     .box,  .caixa{
         width:60%;
@@ -165,11 +179,11 @@ input[type="password"]::-ms-reveal {            /* trocando a cor do olho deixan
     }
 }
 
-
+/* pc */
 @media screen and (min-width: 1025px) and (max-width: 1920px){
-    .fa-arrow-left{
+    /* .fa-arrow-left{
          margin: 0rem 530px 0px 0px;
-    }
+    } */
 
         .box,  .caixa {
         width:60%;
@@ -180,19 +194,3 @@ input[type="password"]::-ms-reveal {            /* trocando a cor do olho deixan
 
 }
 
-
-@media screen and (min-width: 1921px) {
-        .box,  .caixa {
-        width:10%;
-   
-    }    
-
-
-    .fa-arrow-left{
-         margin: 0rem 130px 0px 0px;
-    }
-
-        
-
-    
-}
