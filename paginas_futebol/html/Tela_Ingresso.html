@@ -36,40 +36,46 @@
     <main>
         <h1>Compra de Ingressos</h1>
 
-        <section class="titulo-ingresso">
-            <div class="rodada-info">
-                <h3>19ª Rodada</h3>
-            </div>
-            <h2>Drakos FC x Flamengo</h2>
-            <div class="logos-times">
-                <img src="../img/logo_time_drako 3.png" alt="Drakos FC">
-                <span>vs</span>
-                <img src="../img/image.png" alt="Flamengo">
-            </div>
-        </section>
+        <!-- 🔰 Início da seção suavemente centralizada -->
+        <div class="secao-central-suave">
 
-        <section class="mapa-estadio">
-            <h3>Mapa do Estádio</h3>
-            <img src="../img/mapa_estadio.png" alt="Mapa do Estádio com setores">
-        </section>
+            <section class="titulo-ingresso">
+                <div class="rodada-info">
+                    <h3>19ª Rodada</h3>
+                </div>
+                <h2>Drakos FC x Flamengo</h2>
+                <div class="logos-times">
+                    <img src="../img/logo_time_drako 3.png" alt="Drakos FC">
+                    <span>vs</span>
+                    <img src="../img/image.png" alt="Flamengo">
+                </div>
+            </section>
 
-        <form class="form-setor">
-            <label for="setor">Setor:</label>
-            <select id="setor" name="setor">
-                <option value="ladoA_arquibancada_anda">Lado A Arquibancada Anda</option>
-                <option value="ladoA_cadeira_cativa">Lado A Cadeira Cativa</option>
-                <option value="ladoA_arquibancada_cima">Lado A Arquibancada Cima</option>
-                <option value="ladoB_arquibancada_anda">Lado B Arquibancada Anda</option>
-                <option value="ladoB_cadeira_cativa">Lado B Cadeira Cativa</option>
-                <option value="ladoB_arquibancada_cima">Lado B Arquibancada Cima</option>
-                <option value="ladoA_cadeira_ladoB_cima">Lado A Cadeira / Lado B Arquibancada Cima</option>
-            </select>
+            <section class="mapa-estadio">
+                <h3>Mapa do Estádio</h3>
+                <img src="../img/mapa_estadio.png" alt="Mapa do Estádio com setores">
+            </section>
 
-            <label for="quantidade">Quantidade (De 1 até 5):</label>
-            <input type="number" id="quantidade" name="quantidade" min="1" max="5">
-            <p class="preco-ingresso">Preço total: <strong id="preco-total">R$60,00</strong></p>
-            <button type="submit" class="botao-comprar">Comprar Ingresso</button>
-        </form>
+            <form class="form-setor">
+                <label for="setor">Setor:</label>
+                <select id="setor" name="setor">
+                    <option value="ladoA_arquibancada_anda">Lado A Arquibancada Anda</option>
+                    <option value="ladoA_cadeira_cativa">Lado A Cadeira Cativa</option>
+                    <option value="ladoA_arquibancada_cima">Lado A Arquibancada Cima</option>
+                    <option value="ladoB_arquibancada_anda">Lado B Arquibancada Anda</option>
+                    <option value="ladoB_cadeira_cativa">Lado B Cadeira Cativa</option>
+                    <option value="ladoB_arquibancada_cima">Lado B Arquibancada Cima</option>
+                    <option value="ladoA_cadeira_ladoB_cima">Lado A Cadeira / Lado B Arquibancada Cima</option>
+                </select>
+
+                <label for="quantidade">Quantidade (De 1 até 5):</label>
+                <input type="number" id="quantidade" name="quantidade" min="1" max="5">
+                <p class="preco-ingresso">Preço total: <strong id="preco-total">R$60,00</strong></p>
+                <button type="submit" class="botao-comprar">Comprar Ingresso</button>
+            </form>
+
+        </div>
+        <!-- 🔚 Fim da seção suavemente centralizada -->
 
         <section class="resumo-compra" id="resumo-compra" style="display: none;">
             <h3>Resumo da Compra</h3>
