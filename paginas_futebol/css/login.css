@@ -23,6 +23,7 @@ main{
     background: #8F0000(0, 28, 79, 0.3); /* cor semitransparente */
     backdrop-filter: blur(50px); /* o blur no fundo */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    max-width: 600px;
 }
     
 
@@ -49,6 +50,7 @@ main{
     border-radius: 15px;
     padding: 8px 15px;
     background-color: transparent;
+    max-width: 300px;
 }
 
 
@@ -102,14 +104,16 @@ input[type="password"]::-ms-reveal {            /* trocando a cor do olho deixan
 .esqueceu_senha h4{
     color: rgb(213, 211, 211);
     text-decoration-line: none;
-    font-size: 14px;
-    margin-left: 120px;
+    font-size: 1.1rem;
+    margin: 0px 0px 0px 6rem;
+
 }
 
 .criar-conta{
     margin-top: 10px;
     color: aliceblue;
     margin-bottom: 100px;
+    font-size: 1.2em;
 
 }
 
@@ -133,8 +137,12 @@ input[type="password"]::-ms-reveal {            /* trocando a cor do olho deixan
         margin: 0rem 770px 0px 0px;
     }
 
-    .box,  .caixa, .esqueceu_senha {
+    .box,  .caixa  {
         width:30%;
+    }
+
+    .esqueceu_senha{
+        margin-left: 100px;
     }
 }
 
@@ -149,15 +157,42 @@ input[type="password"]::-ms-reveal {            /* trocando a cor do olho deixan
         margin: 0rem 350px 0px 0px;
     }
 
-    .box,  .caixa, .esqueceu_senha {
-        width:30%;
+    .box,  .caixa{
+        width:60%;
+    }
+        .esqueceu_senha{
+        margin-left: 50px;
     }
 }
 
 
 @media screen and (min-width: 1025px) and (max-width: 1920px){
     .fa-arrow-left{
-         margin: 0rem 630px 0px 0px;
+         margin: 0rem 530px 0px 0px;
     }
 
+        .box,  .caixa {
+        width:60%;
+    }
+    .esqueceu_senha{
+        margin-left: 90px;
+    }
+
+}
+
+
+@media screen and (min-width: 1921px) {
+        .box,  .caixa {
+        width:10%;
+   
+    }    
+
+
+    .fa-arrow-left{
+         margin: 0rem 130px 0px 0px;
+    }
+
+        
+
+    
 }
