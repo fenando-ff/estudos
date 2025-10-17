@@ -65,7 +65,7 @@ main{
 
 
 
-.caixa input {
+.caixa input{
     flex: 1;                     /* Faz o input ocupar o espaço restante */
     height: 20px;
     color: aliceblue;
@@ -97,15 +97,6 @@ input[type="password"]::-ms-reveal {            /* trocando a cor do olho deixan
     color: aliceblue;
     font-size: 18px;
     flex-shrink: 0;              /* Impede o ícone de encolher */
-}
-
-
-
-.botao:hover{
-    background-color: #b32108;
-    color: aliceblue;
-    scale: 1.0s;
-
 }
 
 
