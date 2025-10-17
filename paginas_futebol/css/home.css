@@ -287,6 +287,8 @@ a {
 .noticias {
     text-align: center;
     padding: 16px;
+    width: 60%;
+    margin: auto;
 }
 
 .titulo-noticias {
@@ -300,6 +302,12 @@ a {
     gap: 1rem;
 }
 
+.carrossel-noticia {
+    overflow: hidden;
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
 .manchete .texto-noticia {
     display: flex;
     flex-direction: column;
@@ -308,6 +316,7 @@ a {
     color: #fff;
     height: 15rem;
     gap: 2rem;
+    flex: 2;
 }
 
 .manchete .texto-noticia .subtitulo-noticia {
@@ -324,11 +333,21 @@ a {
     border-radius: 8px;
 }
 
+.slide {
+    display: flex;
+    margin-bottom: 16px;
+    width: 300%;
+    transition: transform 0.5s ease;
+}
+
 .img-carrossel-noticia {
     width: 16rem;
     border-radius: 8px;
-    display: none;
     margin: auto;
+}
+
+.img2-carrossel {
+    height: 237.19px;
 }
 
 .ativo {
@@ -340,10 +359,6 @@ a {
     height: 100%;
     object-fit: cover;
     border-radius: 12px;
-}
-
-.slide {
-    margin-bottom: 16px;
 }
 
 .barra-carrossel {
@@ -397,7 +412,7 @@ a {
 /* ==============================
    TABLETS
    ============================== */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
     .container-cards {
         flex-direction: row;
         flex-wrap: wrap;
@@ -419,6 +434,25 @@ a {
     .info-jogo .dia-hora-info-jogo { 
         font-size: 28px; 
     }
+
+    .manchete{
+        margin: auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .manchete .texto-noticia {
+        width: 50%;
+    }
+
+    .carrossel-noticia .slide{
+        margin-bottom: 12px;
+    }
+
+    .manchete .texto-noticia, .carrossel-noticia {
+        height: 16rem;
+    }
+
 }
 
 /* ==============================
