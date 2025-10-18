@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Multi-Etapas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/teste_cadastro.css">
+    <link rel="stylesheet" href="../../botoes_cores_fontes/ver_botoes.css">
+</head>
+<body>
+
+<header class="cabecalho">
+    <a class="logo" href="index.html">
+        <img src="../img/logo_time_drako 3.png" alt="escudo do águia de marabá">
+        <h1>DRAKOS FC</h1>
+    </a>
+    <ul class="menu-hamburgue">
+        <li><a href="login.html">Login</a></li>
+        <li id="botao_hamburguer"><a href="#">Outros</a></li>
+        <li><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+    </ul> 
+    <div class="nav">
+        <ul class="hamburguer-opcoes">
+            <li class="opcao-nav"><a href="loja_detalhe.html">Loja</a></li>
+            <li class="opcao-nav"><a href="noticias.html">Notícias</a></li>
+            <li class="opcao-nav"><a href="historia.html">História</a></li>
+            <li class="opcao-nav btn-esconde"><a href="login.html">Login</a></li>
+            <li class="opcao-nav"><a href="ingresso.html">Ingressos</a></li>
+            <li class="opcao-nav"><a href="socio.html">Sócios</a></li>
+            <li class="btn-esconde"><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <div class="conteiner">
+        <!-- ETAPA 1 -->
+        <section id="etapa1" class="etapa ativa">
+            <div id="area_seta">
+                <i class="fa-solid fa-arrow-left" style="visibility:hidden"></i>
+            </div>
+            <h2 class="titulo_login">Cadastrar-se</h2>
+
+            <div class="caixa usuario">
+                <i class='bx bx-user'></i>
+                <input placeholder="Nome" type="text">
+            </div>
+
+            <div class="caixa senha">
+                <i class='bx bx-user'></i>
+                <input placeholder="Sobrenome" type="text">
+            </div>
+
+            <h3 class="comando">Selecione seu sexo:</h3>
+            <div class="informando_o_sexo">
+                <div class="caixinha masculino" id="caixa_m">
+                    <i class="fa-solid fa-mars"></i>
+                </div>
+                <div class="caixinha feminino" id="caixa_f">
+                    <i class="fa-solid fa-venus"></i>
+                </div>
+            </div>
+
+            <div class="caixa_indeciso">
+                <label>
+                    <input type="checkbox" id="check">
+                    <p>PREFIRO NÃO INFORMAR</p>
+                </label>
+            </div>
+
+            <button class="btn-terceiro" onclick="mostrarEtapa(2)">Próximo</button>
+        </section>
+
+        <!-- ETAPA 2 -->
+        <section id="etapa2" class="etapa">
+            <div id="area_seta">
+                <button class="btn-voltar" onclick="mostrarEtapa(1)">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+            </div>
+            <h2 class="titulo_login">Quase-lá</h2>
+
+            <div class="caixa email">
+                <i class='bx bx-envelope-open'></i>
+                <input placeholder="Email" type="text">
+            </div>
+
+            <div class="caixa telefone">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <input placeholder="Telefone" type="text">
+            </div>
+            <p class="informando">Campo não obrigatório.</p>
+
+            <div class="caixa cpf">
+                <i class="fa-regular fa-address-book"></i>
+                <input placeholder="CPF" type="text">
+            </div>
+
+            <button class="btn-terceiro" onclick="mostrarEtapa(3)">Próximo</button>
+        </section>
+
+        <!-- ETAPA 3 -->
+        <section id="etapa3" class="etapa">
+            <div id="area_seta">
+                <button class="btn-voltar" onclick="mostrarEtapa(2)">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+            </div>
+            <h2 class="titulo_login">Por fim</h2>
+
+            <div class="caixa senha">
+                <i class="fa-solid fa-lock"></i>
+                <input placeholder="Crie uma Senha" type="password">
+            </div>
+
+            <div class="caixa confirmar_senha">
+                <i class="fa-regular fa-address-book"></i>
+                <input placeholder="Confirme sua Senha" type="password">
+            </div>
+
+            <button class="btn-terceiro" onclick="mostrarEtapa(4)">Confirmar</button>
+        </section>
+
+        <!-- ETAPA 4 - Conta criada -->
+        <section id="etapa4" class="etapa">
+            <h2 class="titulo_login">Conta criada!</h2>
+            <img class="conta_criada" src="../img/correto.png" alt="">
+            <a href="index.html">
+                <button class="btn-terceiro">Voltar</button>
+            </a>
+        </section>
+
+        <!-- ETAPAS VISUAL -->
+        <div class="etapas">
+            <div class="etapa um"><div class="circulo uxx">1</div></div>
+            <div class="etapa dois"><div class="circulo doixx">2</div></div>
+            <div class="etapa tres"><div class="circulo trexx">3</div></div>
+        </div>
+
+    </div>
+</main>
+
+<footer>&copy;</footer>
+
+<script>
+const etapas = document.querySelectorAll('.etapa');
+
+function mostrarEtapa(numero) {
+    etapas.forEach(e => {
+        e.style.display = 'none';
+        e.classList.remove('ativa');
+    });
+    const etapaAtual = document.getElementById(`etapa${numero}`);
+    if (etapaAtual) {
+        etapaAtual.style.display = 'block';
+        etapaAtual.classList.add('ativa');
+    }
+}
+
+// Inicializa exibindo apenas a primeira etapa
+mostrarEtapa(1);
+
+// SEXO
+const caixinhas = document.querySelectorAll(".caixinha");
+const checkbox = document.getElementById("check");
+
+caixinhas.forEach(icone => {
+    icone.addEventListener("click", () => {
+        if (checkbox.checked) checkbox.checked = false;
+        caixinhas.forEach(i => i.classList.remove("ativo"));
+        icone.classList.add("ativo");
+    });
+});
+
+checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+        caixinhas.forEach(i => i.classList.remove("ativo"));
+    }
+});
+</script>
+</body>
+</html>
+

@@ -1,0 +1,197 @@
+/* ---------- ESTILOS GERAIS ---------- */
+body {
+    background: radial-gradient(circle at center, #8F0000 10%, #0F0F0F 100%);
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.conteiner {
+    position: relative; 
+    width: 35%;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 30px;
+    border-radius: 20px;
+    background: rgba(143, 0, 0, 0.3);
+    backdrop-filter: blur(50px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    overflow: hidden;
+}
+
+/* ---------- ETAPAS ---------- */
+.etapa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.etapa.ativa {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Título */
+.titulo_login {
+    margin: 20px 0 30px 0;
+    color: #d2d2d2;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* Caixa de input */
+.caixa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 8px 15px;
+    background-color: transparent;
+}
+
+.caixa input {
+    flex: 1;
+    height: 35px;
+    color: aliceblue;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.caixa input::placeholder {
+    color: aliceblue;
+}
+
+/* Botão próximo/confirmar */
+.btn-terceiro {
+    margin: 30px 0px 40px 0px;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: #8F0000;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-terceiro:hover {
+    background-color: #b32108;
+    transform: scale(1.05);
+}
+
+/* Seleção de sexo */
+.informando_o_sexo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.caixinha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 20%;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.caixinha:hover,
+.caixinha.ativo {
+    transform: scale(1.1);
+    border-color: #ffcc00;
+}
+
+/* Checkbox */
+.caixa_indeciso input[type="checkbox"] {
+    width: 15px;
+    height: 20px;
+    accent-color: #f6f6f6;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.caixa_indeciso label {
+    color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.caixa_indeciso p {
+    font-size: 13px;
+}
+
+/* Indicadores de etapas */
+.etapas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.etapa .circulo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #d5d5d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #353535;
+    font-weight: bold;
+}
+
+.uxx, .doixx, .trexx {
+    background-color: #0F0F0F;
+    color: #ffffff;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .conteiner { width: 80%; padding: 20px; min-height: 500px; }
+    .titulo_login { font-size: 2rem; }
+    .caixa input { height: 30px; }
+    .btn-terceiro { width: 100%; font-size: 16px; }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .conteiner { width: 50%; }
+    .titulo_login { font-size: 2.5rem; }
+}
+
+@media screen and (min-width: 1025px) {
+    .conteiner { width: 35%; }
+    .titulo_login { font-size: 3rem; }
+}
