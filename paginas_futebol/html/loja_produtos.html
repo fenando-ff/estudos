@@ -60,17 +60,19 @@
   </section>
 
   <!-- Seção temporada com carrossel manual -->
-  <section class="season">
-    <div class="season-text">
-      <h2>TEMPORADA 25/26</h2>
-      <p>
-        Os mantos da nova temporada já estão disponíveis. Sócios podem levar descontos de até 50%.<br>
-        Os uniformes feitos do material de vibranium, junto com um pequeno ingrediente.<br>
-        Se você for pobre, melhor sair dessa tela de produtos...<br>
-        Desde já, agradeço. Bye Bye
-      </p>
-    </div>
+<section class="season">
+  <div class="season-text">
+    <h2>TEMPORADA 25/26</h2>
+    <p>
+      Os mantos da nova temporada já estão disponíveis. Sócios podem levar descontos de até 50%.<br>
+      Os uniformes feitos do material de vibranium, junto com um pequeno ingrediente.<br>
+      Se você for pobre, melhor sair dessa tela de produtos...<br>
+      Desde já, agradeço. Bye Bye
+    </p>
+  </div>
 
+  <!-- Container do carrossel e seta como flex -->
+  <div class="season-wrapper">
     <div class="season-carousel">
       <div class="season-slide active">
         <img src="../img_produtos_loja/primerio_carrosel.png" alt="Slide 1">
@@ -81,11 +83,11 @@
       <div class="season-slide">
         <img src="img3.jpg" alt="Slide 3">
       </div>
-
-      <!-- Botão de próximo -->
-      <button class="next-slide">&#8250;</button>
     </div>
-  </section>
+    <button class="next-slide">&#8250;</button>
+  </div>
+</section>
+
 
   <!-- Seção de produtos -->
   <section class="produtos">
@@ -96,39 +98,97 @@
       <a href="#">Acessórios</a>
     </nav>
 
-    <div class="grid">
-      <div class="produto">
-        <img src="../img_produtos_loja/Rectangle.png" alt="Produto 1">
-        <h3>Uniforme temp 24/25</h3>
-        <p>R$299,90</p>
-      </div>
-      <div class="produto">
-        <img src="../img_produtos_loja/terceiro_uniforme.png" alt="Produto 2">
-        <h3>Uniforme Alternativo</h3>
-        <p>R$299,90</p>
-      </div>
-      <div class="produto">
-        <img src="../img_produtos_loja/uniforme_braco.png" alt="Produto 3">
-        <h3>Uniforme Branco</h3>
-        <p>R$299,90</p>
-      </div>
-      <div class="produto">
-        <img src="../img_produtos_loja/escudo.png" alt="produto 4">
-        <h3>Chinelo Oficial</h3>
-        <p>R$99,90</p>
-      </div>
-      <div class="produto">
-        <img src="../img_produtos_loja/sandalia.png" alt="Produto 5">
-        <h3>Adesivo Drako</h3>
-        <p>R$9,90</p>
-      </div>
-      <div class="produto">
-        <img src="../img_produtos_loja/bola.png" alt="Produto 6">
-        <h3>Bola Oficial</h3>
-        <p>R$199,90</p>
-      </div>
+
+
+<div class="carrossel-produtos">
+  <!-- Botão de voltar -->
+  <button class="btn-prev">&#10094;</button>
+
+  <!-- Container dos produtos -->
+  <div class="flex">
+    <div class="produto">
+      <img src="../img_produtos_loja/Rectangle.png" alt="Produto 1">
+      <h3>Uniforme temp 24/25</h3>
+      <p>R$299,90</p>
     </div>
+    <div class="produto">
+      <img src="../img_produtos_loja/terceiro_uniforme.png" alt="Produto 2">
+      <h3>Uniforme Alternativo</h3>
+      <p>R$299,90</p>
+    </div>
+    <div class="produto">
+      <img src="../img_produtos_loja/uniforme_braco.png" alt="Produto 3">
+      <h3>Uniforme Branco</h3>
+      <p>R$299,90</p>
+    </div>
+    <div class="produto">
+      <img src="../img_produtos_loja/uniforme_personalizado.png" alt="Produto 4">
+      <h3>Chinelo Oficial</h3>
+      <p>R$99,90</p>
+    </div>
+    <div class="produto">
+      <img src="../img_produtos_loja/somente_camisa_branca.png" alt="produto 5">
+      <h3>Adesivo Drako</h3>
+      <p>R$9,90</p>
+    </div>
+    <div class="produto">
+      <img src="../img_produtos_loja/uniforme classico.png" alt="Produto 6">
+      <h3>Bola Oficial</h3>
+      <p>R$199,90</p>
+    </div>
+  </div>
+
+  <!-- Botão de avançar -->
+  <button class="btn-next">&#10095;</button>
+</div>
+
+
+
+      <div class="carrossel-produtos">    
+        <button class="btn-prev">&#10094;</button>
+        <div class="flex">
+
+          
+          <div class="produto">
+              <img src="../img_produtos_loja/item_chapeu.png" alt="Produto 1">
+              <h3>Uniforme temp 24/25</h3>
+              <p>R$299,90</p>
+          </div>
+
+        <div class="produto">
+              <img src="../img_produtos_loja/item_chaveiro.png" alt="Produto 2">
+              <h3>Uniforme Alternativo</h3>
+              <p>R$299,90</p>
+        </div>
+
+        <div class="produto">
+              <img src="../img_produtos_loja/escudo.png" alt="Produto 3">
+              <h3>Uniforme Branco</h3>
+              <p>R$299,90</p>
+        </div>
+
+        <div class="produto">
+              <img src="../img_produtos_loja/sandalia.png" alt="produto 4">
+              <h3>Chinelo Oficial</h3>
+              <p>R$99,90</p>
+        </div>
+
+        <div class="produto">
+            <img src="../img_produtos_loja/bola.png" alt="Produto 5">
+            <h3>Adesivo Drako</h3>
+            <p>R$9,90</p>
+      </div>
+
+      <div class="produto">
+            <img src="../img_produtos_loja/item _cachecol.png" alt="Produto 6">
+            <h3>Bola Oficial</h3>
+            <p>R$199,90</p>
+      </div> 
+        
+  </div>
+  <button class="btn-next">&#10095;</button>
   </section>
+
 </main>
       <script src="../js/loja_produtos.js"></script>
 </body>

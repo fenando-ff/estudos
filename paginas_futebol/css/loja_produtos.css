@@ -12,8 +12,8 @@
    =============================== */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #a50000; /* Fundo cinza claro */
-  color: #111; /* Texto quase preto */
+  background-color: #a50000;
+  color: #111;
 }
 
 /* Container principal que centraliza o conteúdo */
@@ -22,7 +22,6 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
-
 
 /* ===============================
    BANNER SUPERIOR – Título + Carrossel (automático)
@@ -83,22 +82,20 @@ body {
   object-fit: cover;
 }
 
-
 /* ===============================
    SEÇÃO TEMPORADA 25/26
    =============================== */
 .season {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  background: #fff;
-  padding: 40px 80px;
+  flex-wrap: wrap;
   gap: 20px;
+  background: #fff;
+  padding: 40px;
+  align-items: flex-start;
 }
 
-/* Texto à esquerda */
 .season-text {
-  flex: 1;
+  flex: 1 1 300px;
 }
 
 .season-text h2 {
@@ -113,26 +110,33 @@ body {
   color: #222;
 }
 
-/* Carrossel à direita com seta */
+/* Wrapper do carrossel + seta */
+.season-wrapper {
+  display: flex;
+  transition: transform 0.5s ease; /* animação de deslize */
+  align-items: center;
+  gap: 15px;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
 .season-carousel {
-  flex: 1;
-  position: relative;
-  width: 100%;
-  max-width: 400px;
-  aspect-ratio: 5 / 5;
   overflow: hidden;
   border-radius: 8px;
+  min-width: 350px;
+  height: 350px;
+  position: relative;
 }
 
-/* Slides do carrossel manual */
-.season-carousel img{
-  filter: grayscale(100%);
-  transition: 1.0s;
-}
-.season-carousel img:hover{
-  filter: grayscale(0%);
+
+.season-slides-wrapper {
+  display: flex;
+  transition: transform 0.5s ease; /* animação de deslize */
+  width: 100%;
+  height: 100%;
 }
 
+/* Slides agora ocupam 100% do container, sem sair da tela */
 .season-slide {
   position: absolute;
   top: 0;
@@ -140,8 +144,6 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  z-index: 0;
 }
 
 .season-slide.active {
@@ -153,37 +155,36 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
   border-radius: 8px;
+  filter: grayscale(100%);
+  transition: 1.0s;
 }
 
-/* Botão de próxima imagem */
+.season-slide img:hover {
+filter: grayscale(0%);
+  }
+
+/* Botão da seta */
 .next-slide {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  font-size: 30px;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
+  background-color: transparent;
   border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
   cursor: pointer;
-  z-index: 2;
-  transition: background-color 0.3s ease;
+  font-size: 80px;
+  flex-shrink: 0;
+  transition: 0.3s;
 }
 
 .next-slide:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #d2d2d2;
 }
+
 
 
 /* ===============================
    SEÇÃO PRODUTOS
    =============================== */
 .produtos {
+  position: relative;
   background: #fff;
   padding: 20px;
   margin-bottom: 40px;
@@ -218,47 +219,209 @@ body {
   border-bottom: 2px solid #000;
 }
 
-
 /* ===============================
-   GRID DE PRODUTOS
+   CARROSSEL DE PRODUTOS (ARRASTÁVEL + SETAS)
    =============================== */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+   .carrossel-produtos {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espaço entre setas e produtos */
 }
 
-/* Card de cada produto */
+.carrossel-produtos .flex {
+  flex: 1; /* ocupa todo espaço disponível entre as setas */
+  overflow-x: auto;
+  display: flex;
+  gap: 20px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px 0;
+}
+
+.btn-prev, .btn-next {
+  background-color: transparent;
+  border: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 40px;
+  flex-shrink: 0;
+  transition: 0.3s;
+}
+
+.btn-prev:hover, .btn-next:hover {
+  background-color: #9d0808;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.flex::-webkit-scrollbar {
+  display: none;
+}
+
+/* Cada produto como um card */
 .produto {
+  flex: 0 0 auto;
+  width: 300px;
   background: #f9f9f9;
   padding: 10px;
   text-align: center;
   border: 1px solid #ddd;
+  border-radius: 8px;
   transition: 0.3s;
   cursor: pointer;
 }
 
-/* Imagem do produto */
 .produto img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  border-radius: 8px;
   margin-bottom: 10px;
 }
 
-/* Título do produto */
 .produto h3 {
   font-size: 17px;
   margin-bottom: 5px;
 }
 
-/* Preço do produto */
 .produto p {
   font-size: 14px;
   color: #333;
 }
 
-/* Efeito ao passar o mouse no produto */
 .produto:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botões de navegação */
+.btn-scroll {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  color: #333;
+  background: rgba(255,255,255,0.9);
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+.btn-scroll:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Botões posicionados */
+.btn-prev {
+  left: 10px;
+}
+.btn-next {
+  right: 10px;
+}
+
+
+
+
+/* ===============================
+   MEDIA QUERIES
+   =============================== */
+
+/* Para tablets e telas médias */
+@media (max-width: 1024px) {
+  .season {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .season-text,
+  .season-wrapper {
+    flex: 1 1 100%;
+  }
+
+  .season-carousel {
+    height: 300px;
+  }
+
+  .season-slide img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .next-slide {
+    font-size: 60px;
+    padding: 8px;
+  }
+}
+
+/* Para smartphones e telas pequenas */
+@media (max-width: 768px) {
+  .season-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .season-carousel {
+    width: 100%;
+    height: 50px; /* mantém visível */
+    min-width: 250px;
+  }
+
+  .season-slide img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .next-slide {
+    font-size: 50px;
+    padding: 6px;
+  }
+}
+
+
+/* Para telas muito pequenas / celulares estreitos */
+@media (max-width: 480px) {
+  /* Carrossel */
+
+
+  .season-text h2 {
+    font-size: 24px;
+  }
+
+  .season-text p {
+    font-size: 14px;
+  }
+
+  .season-carousel {
+    height: 200px;
+    width: 200px;
+  }
+
+  .next-slide {
+    font-size: 40px;
+  }
+
+  .produto {
+    width: 180px;
+  }
+
+  .produtos h2 {
+    font-size: 20px;
+  }
 }

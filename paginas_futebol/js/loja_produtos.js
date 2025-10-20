@@ -15,19 +15,43 @@ setInterval(() => {
 }, 5000); // troca a cada 5 segundos
 
 
+
+
+
+
+
+
+
+
+
+
+
 // ======= CARROSSEL MANUAL DA TEMPORADA =======
 let currentSeasonSlide = 0;
 const seasonSlides = document.querySelectorAll('.season-slide');
 const nextButton = document.querySelector('.next-slide');
 
 nextButton.addEventListener('click', () => {
-  // Remove ativo do slide atual
   seasonSlides[currentSeasonSlide].classList.remove('active');
-  
-  // Avança para o próximo slide (ou volta ao primeiro)
   currentSeasonSlide = (currentSeasonSlide + 1) % seasonSlides.length;
-  
-  // Adiciona ativo no novo slide
   seasonSlides[currentSeasonSlide].classList.add('active');
 });
 
+
+
+
+
+const carrossel = document.querySelectorAll('.carrossel-produtos');
+carrossel.forEach(carro => {
+  const btnPrev = carro.querySelector('.btn-prev');
+  const btnNext = carro.querySelector('.btn-next');
+  const flex = carro.querySelector('.flex');
+
+  btnPrev.addEventListener('click', () => {
+    flex.scrollBy({ left: -300, behavior: 'smooth' });
+  });
+
+  btnNext.addEventListener('click', () => {
+    flex.scrollBy({ left: 300, behavior: 'smooth' });
+  });
+});
