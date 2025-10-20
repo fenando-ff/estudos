@@ -21,21 +21,46 @@ setInterval(() => {
 
 
 
-
-
-
-
-
 // ======= CARROSSEL MANUAL DA TEMPORADA =======
+// ======= CARROSSEL MANUAL DA TEMPORADA (com deslizamento) =======
 let currentSeasonSlide = 0;
 const seasonSlides = document.querySelectorAll('.season-slide');
 const nextButton = document.querySelector('.next-slide');
+let isSliding = false; // evita clique duplo rápido
 
 nextButton.addEventListener('click', () => {
-  seasonSlides[currentSeasonSlide].classList.remove('active');
-  currentSeasonSlide = (currentSeasonSlide + 1) % seasonSlides.length;
-  seasonSlides[currentSeasonSlide].classList.add('active');
+  if (isSliding) return;
+  isSliding = true;
+
+  const current = seasonSlides[currentSeasonSlide];
+  const nextIndex = (currentSeasonSlide + 1) % seasonSlides.length;
+  const next = seasonSlides[nextIndex];
+
+  // Reseta classes
+  seasonSlides.forEach(s => s.classList.remove('exit-left'));
+
+  // Slide atual sai para a esquerda
+  current.classList.remove('active');
+  current.classList.add('exit-left');
+
+  // Slide seguinte entra da direita
+  next.style.left = '100%';
+  next.classList.add('active');
+
+  // Pequeno delay para a transição ocorrer
+  requestAnimationFrame(() => {
+    next.style.left = '0';
+  });
+
+  // Após a animação, limpa estados antigos
+  setTimeout(() => {
+    current.classList.remove('exit-left');
+    isSliding = false;
+  }, 600);
+
+  currentSeasonSlide = nextIndex;
 });
+
 
 
 
