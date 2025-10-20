@@ -30,7 +30,6 @@ const totalSlides = dots.length; // Quantidade de slides/pontos
 function atualizarCarrossel() {
     // 1. Mover o slide
     const slideWidth = 100 / totalSlides; // Cada slide ocupa uma porcentagem da largura
-    slide.style.transform = `translateX(-${slideIndex * slideWidth}%)`;
 
     // 2. Atualizar o texto da notícia
     subtituloNoticia.textContent = noticiasTexto[slideIndex].subtitulo;
