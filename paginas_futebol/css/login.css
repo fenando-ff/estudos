@@ -23,13 +23,23 @@ main{
     background: #8F0000(0, 28, 79, 0.3); /* cor semitransparente */
     backdrop-filter: blur(50px); /* o blur no fundo */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    max-width: 600px;
 }
     
 
 .fa-arrow-left{
-    color: #e6e6e6;
-    font-size: 40px;
-    margin: 0px 220px 0px 0px;
+  color: #e6e6e6;
+  font-size: 2.5rem;
+  color: #e6e6e6;
+  font-size: 2.5rem;
+  margin-right: 20px; /* margem menor e mais equilibrada */
+  width: 5%;
+  text-align: left;
+}
+
+    
+#area_seta {
+    width: 100%;
 }
 
 
@@ -43,18 +53,19 @@ main{
 .caixa {
     display: flex;
     align-items: center;
-    gap: 10px;                   /* Espaço entre ícone e input */
-    margin: 10px 0;
+    gap: auto;                   /* Espaço entre ícone e input */
+    margin: 10px 0PX;
     border: 1px solid white;
     border-radius: 15px;
     padding: 8px 15px;
     background-color: transparent;
+    max-width: 300px;
 }
 
 
 
 
-.caixa input {
+.caixa input{
     flex: 1;                     /* Faz o input ocupar o espaço restante */
     height: 20px;
     color: aliceblue;
@@ -90,26 +101,19 @@ input[type="password"]::-ms-reveal {            /* trocando a cor do olho deixan
 
 
 
-.botao:hover{
-    background-color: #b32108;
-    color: aliceblue;
-    scale: 1.0s;
-
-}
-
-
-
 .esqueceu_senha h4{
     color: rgb(213, 211, 211);
     text-decoration-line: none;
-    font-size: 14px;
-    margin-left: 120px;
+    font-size: 1.1rem;
+    margin: 0px 0px 0px 6rem;
+    
 }
 
 .criar-conta{
     margin-top: 10px;
     color: aliceblue;
     margin-bottom: 100px;
+    font-size: 1.2em;
 
 }
 
@@ -124,40 +128,60 @@ input[type="password"]::-ms-reveal {            /* trocando a cor do olho deixan
     color: #F7C02B;
 }
 
+
+/* celular */
 @media screen and (min-width: 768px) {
     .conteiner {
         width: 60%;
     }
 
-    .fa-arrow-left{
+    /* .fa-arrow-left{
         margin: 0rem 770px 0px 0px;
+    } */
+
+    .box{
+        width:10%;
+    }
+    .caixa{
+        gap: 1%;
     }
 
-    .box,  .caixa, .esqueceu_senha {
-        width:30%;
+    .esqueceu_senha{
+        margin-left: 100px;
     }
 }
 
 
-
+/* tablete */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .conteiner {
         width: 50%;
     }
 
-    .fa-arrow-left{
+    /* .fa-arrow-left{
         margin: 0rem 350px 0px 0px;
-    }
+    } */
 
-    .box,  .caixa, .esqueceu_senha {
-        width:30%;
+    .box,  .caixa{
+        width:60%;
+    }
+        .esqueceu_senha{
+        margin-left: 50px;
     }
 }
 
-
+/* pc */
 @media screen and (min-width: 1025px) and (max-width: 1920px){
-    .fa-arrow-left{
-         margin: 0rem 630px 0px 0px;
+    /* .fa-arrow-left{
+         margin: 0rem 530px 0px 0px;
+    } */
+
+        .box,  .caixa {
+        width:60%;
+    }
+    .esqueceu_senha{
+        margin-left: 90px;
     }
 
 }
+
