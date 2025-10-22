@@ -7,29 +7,29 @@ body{
 
 main{
     height: 100vh;
-    margin: 0;
-    width: 0;
+    width: 100%;
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+
 }
 
 .conteiner{
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-    margin: 100px 60px;
+    padding: 40px 30px;
+    margin: 120px 65px;
     border-radius: 20px;
-    background: #8F0000(0, 28, 79, 0.3); 
-    backdrop-filter: blur(50px); 
+    background: #8F0000(0, 28, 79, 0.3); /* cor semitransparente */
+    backdrop-filter: blur(50px); /* o blur no fundo */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    max-width: 600px;
 }
 
 
 
 .conteiner h2{
-    position: absolute;
-    top: 90px;
     text-align: center;
     color: #e4e4e4 ;
     font-family: 'Bebas Neue', sans-serif;
@@ -44,12 +44,9 @@ main{
     width: 180px;
     height: 170px;
     margin: 0px 70px;
-    margin-bottom: 15%;
-    margin-top: 30%;
+    margin-bottom: 10%;
+    margin-top:10%;
 }
-
-
-
 
 
 

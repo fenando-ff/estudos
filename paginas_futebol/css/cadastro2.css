@@ -27,9 +27,17 @@ main{
 }
 
 .fa-arrow-left{
-    color: #e6e6e6;
-    font-size: 40px;
-    margin: 0px 220px 0px 0px;
+  color: #e6e6e6;
+  font-size: 2.5rem;
+  color: #e6e6e6;
+  font-size: 2.5rem;
+  margin-right: 20px; /* margem menor e mais equilibrada */
+  width: 5%;
+  text-align: left;
+}
+
+#area_seta {
+    width: 100%;
 }
 
 .informando{
@@ -45,7 +53,7 @@ main{
     margin: 40px 0px 50px 0px;
     color: #d2d2d2 ;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 60px;
+    font-size: 3rem;
 } 
 
 
@@ -181,5 +189,66 @@ input[type="password"]::-ms-reveal {
 
 .um:not(:last-child)::after {
     background-color: #0F0F0F;
+
+}
+
+
+
+
+/* celular */
+@media screen and (min-width: 768px) {
+    .conteiner {
+        width: 35%;
+    }
+
+    /* .fa-arrow-left{
+        margin: 0rem 770px 0px 0px;
+    } */
+     
+    .informando{
+        margin-right: 30%;
+        font-size: 16px;
+    }
+
+}
+
+
+/* tablete */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .conteiner {
+        width: 40%;
+    }
+
+    .informando{
+        margin-left: 60px;
+        font-size: 17px;
+    }
+
+    /* .fa-arrow-left{
+        margin: 0rem 350px 0px 0px;
+    } */
+
+}
+
+
+
+/* pc */
+@media screen and (min-width: 1025px) and (max-width: 1920px){
+    /* .fa-arrow-left{
+         margin: 0rem 530px 0px 0px;
+    } */
+
+    .box,  .caixa {
+        width:55%;
+    }
+
+    .informando{
+        margin-right: 30%;
+        font-size: 16px;
+    }
+
+    .btn-terceiro{
+        transform: scale(1.1);
+    }
 
 }
