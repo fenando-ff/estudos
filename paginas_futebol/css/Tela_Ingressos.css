@@ -1,9 +1,10 @@
-/* 🔰 Reset e Fonte Base */
+/* 🔰 RESET & BASE GERAL */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.5;
@@ -11,146 +12,44 @@ body {
     color: #000;
 }
 
-/* 🏟️ Conteúdo Principal */
-main {
-    padding: 3rem 1rem 1rem;
-    max-width: 600px;
-    margin: 0 auto;
-}
-main h1 {
-    font-size: 2rem;
-    text-align: center;
-    color: #001A4A;
-    margin-bottom: 2rem;
+/* 🔷 LAYOUT CENTRAL COM DESLOCAMENTO SUAVE */
+.secao-central-suave {
+    max-width: 800px;
+    margin-left: calc(50% - 410px);
+    padding: 0 1.5rem;
 }
 
-/* 🎫 Tela de Ingressos */
-.titulo-ingresso h2 {
-    font-size: 1.5rem;
-    color: #001A4A;
-    text-align: center;
-    margin-bottom: 1.5rem;
+/* Aplicado também aos elementos internos dessa seção, menos deslocados para o centro */
+.rodada-info,
+.logos-times,
+.form-setor,
+.mapa-estadio {
+    max-width: 800px;
+    margin-left: calc(50% - 380px); /* menos deslocado que antes */
+    padding: 0 1.5rem;
 }
 
-/* 🏁 Rodada */
-.rodada-info {
-    text-align: center;
-    margin: -0.5rem 0 1rem;
-}
-.rodada-info h3 {
-    font-size: 1.3rem;
-    color: #001A4A;
-    font-weight: bold;
-}
-
-/* 🆚 Logos dos Times */
-.logos-times {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 1rem;
-}
-.logos-times img {
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
-}
-.logos-times span {
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #001A4A;
-}
-
-/* 🧾 Formulário de Compra */
-.form-setor {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-.form-setor label,
-.form-setor select,
-#quantidade,
-#preco-total {
-    width: 100%;
-    font-size: 1rem;
-}
-.form-setor select,
-#quantidade {
-    padding: 0.75rem;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 1.1rem;
-}
-#quantidade {
-    appearance: auto;
-    -moz-appearance: textfield;
-}
-#quantidade::-webkit-inner-spin-button,
-#quantidade::-webkit-outer-spin-button {
-    opacity: 1;
-    width: 16px;
-}
-
-/* 💰 Preço */
-.preco-ingresso {
-    font-size: 1.2rem;
-    color: #333;
-}
-#preco-total {
-    font-weight: bold;
-    color: #001A4A;
-}
-
-/* 🛒 Botão de Compra */
-.botao-comprar {
-    background-color: #000;
-    color: white;
-    border: none;
-    padding: 0.75rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-.botao-comprar:hover {
-    background-color: #003080;
-}
-
-/* 📋 Resumo da Compra */
-.resumo-compra {
-    margin-top: 1.5rem;
-    padding: 1rem;
-    border: 2px solid #001A4A;
-    border-radius: 8px;
-    background-color: #f5f5f5;
-}
-.resumo-compra h3 {
-    color: #001A4A;
-    margin-bottom: 0.75rem;
-}
-.resumo-compra p {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-/* 📑 Lista de Ingressos */
+/* 📑 LISTA DE INGRESSOS */
 .lista-ingressos {
+    max-width: 700px; /* um pouco menor para não ficar muito grande */
+    margin-left: calc(50% - 350px); /* alinhado mais para o centro */
     margin-top: 1.5rem;
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 6px;
     background-color: #fafafa;
 }
+
 .lista-ingressos h3 {
     color: #000;
     margin-bottom: 0.5rem;
 }
+
 .lista-ingressos ul {
     list-style: none;
     padding-left: 0;
 }
+
 .lista-ingressos .item-ingresso {
     display: flex;
     flex-wrap: wrap;
@@ -162,10 +61,12 @@ main h1 {
     margin-bottom: 0.5rem;
     background-color: #f9f9f9;
 }
+
 .lista-ingressos .info-ingresso p {
     margin: 2px 0;
     font-size: 0.95rem;
 }
+
 .lista-ingressos .botao-excluir {
     background-color: #000;
     color: white;
@@ -176,19 +77,159 @@ main h1 {
     font-size: 0.9rem;
     transition: background-color 0.3s;
 }
+
 .lista-ingressos .botao-excluir:hover {
     background-color: #001A4A;
 }
 
-/* 🗺️ Mapa do Estádio */
+/* 🏟️ CONTEÚDO PRINCIPAL */
+main {
+    padding: 3rem 2rem 1rem;
+    width: 100%;
+    margin: 0;
+}
+
+main h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #001A4A;
+    margin-bottom: 2rem;
+}
+
+/* 🎫 TÍTULO DA TELA DE INGRESSOS */
+.titulo-ingresso h2 {
+    font-size: 1.5rem;
+    color: #001A4A;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* 🏁 INFORMAÇÃO DE RODADA */
+.rodada-info {
+    text-align: center;
+    margin: -0.5rem 0 1rem;
+}
+
+.rodada-info h3 {
+    font-size: 1.3rem;
+    color: #001A4A;
+    font-weight: bold;
+}
+
+/* 🆚 LOGOS DOS TIMES */
+.logos-times {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.logos-times img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.logos-times span {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #001A4A;
+}
+
+/* 🧾 FORMULÁRIO DE COMPRA */
+.form-setor {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.form-setor label,
+.form-setor select,
+#quantidade,
+#preco-total {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.form-setor select,
+#quantidade {
+    padding: 0.75rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+/* Ajustes no input numérico */
+#quantidade {
+    appearance: auto;
+    -moz-appearance: textfield;
+}
+
+#quantidade::-webkit-inner-spin-button,
+#quantidade::-webkit-outer-spin-button {
+    opacity: 1;
+    width: 16px;
+}
+
+/* 💰 PREÇO DO INGRESSO */
+.preco-ingresso {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#preco-total {
+    font-weight: bold;
+    color: #001A4A;
+}
+
+/* 🛒 BOTÃO DE COMPRA */
+.botao-comprar {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.botao-comprar:hover {
+    background-color: #003080;
+}
+
+/* 📋 RESUMO DA COMPRA */
+.resumo-compra {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 2px solid #001A4A;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+}
+
+.resumo-compra h3 {
+    color: #001A4A;
+    margin-bottom: 0.75rem;
+}
+
+.resumo-compra p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* 🗺️ MAPA DO ESTÁDIO */
 .mapa-estadio {
     margin-top: 2rem;
 }
+
 .mapa-estadio h3 {
     text-align: center;
     color: #001A4A;
     margin-bottom: 0.75rem;
 }
+
 .mapa-estadio img {
     width: 100%;
     max-width: 550px;
@@ -197,7 +238,7 @@ main h1 {
     margin: 0 auto;
 }
 
-/* 📌 Rodapé */
+/* 📌 RODAPÉ */
 footer {
     background-color: #000;
     color: white;
@@ -207,18 +248,32 @@ footer {
     font-size: 0.9rem;
 }
 
-/* 📱 Responsivo */
+/* 📱 RESPONSIVIDADE */
 @media (max-width: 600px) {
+    .secao-central-suave,
+    .rodada-info,
+    .logos-times,
+    .form-setor,
+    .mapa-estadio,
+    .lista-ingressos {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 1rem;
+    }
+
     main {
         padding: 2rem 1rem;
     }
+
     .logos-times img {
         width: 50px;
         height: 50px;
     }
+
     .logos-times span {
         font-size: 1.3rem;
     }
+
     .form-setor select,
     .botao-comprar,
     #quantidade,
@@ -226,14 +281,17 @@ footer {
         font-size: 1rem;
         height: auto;
     }
+
     .lista-ingressos .item-ingresso {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .lista-ingressos .botao-excluir {
         margin-top: 0.5rem;
         align-self: flex-end;
     }
+
     footer {
         font-size: 0.8rem;
         padding: 1rem;
