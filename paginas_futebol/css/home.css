@@ -499,6 +499,19 @@ a {
     .proximo-jogo-tabela {
         flex-direction: column;
     }
+
+    .tabelaBrasileirao {
+        width: 100%;
+    }
+
+    .tabelaBrasileirao h1, .tabelaBrasileirao #subtituloTabela {
+        width: 50%;
+    }
+
+    .tabelaBrasileirao .classificacao {
+        width: 90%;
+    }
+
 }
 
 /* ==============================
