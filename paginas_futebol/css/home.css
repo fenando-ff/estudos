@@ -128,7 +128,7 @@ a {
     background-color: #444;
 }
 
-.card3 img {
+.card3 .camisa-card3 {
     width: 80%;
     margin: auto;
 }
@@ -515,8 +515,8 @@ a {
         width: 45%;
     }
 
-    .card3 img { 
-        width: 20%; 
+    .card3 .camisa-card3 { 
+        width: 25%; 
     }
 
     .proximo-jogo .proximo-jogo-versus { 
