@@ -18,10 +18,10 @@ body {
 /* 🔷 CONTEÚDO PRINCIPAL */
 main {
   flex: 1;
-  background-color: #000; /* fundo preto total */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #000;
+  display: block;
+  /* justify-content: center;
+  align-items: center; */
   padding: 20px;
 }
 
@@ -38,12 +38,12 @@ main {
 /* 🔷 JOGO EM DESTAQUE */
 .jogo-destaque {
   background: linear-gradient(180deg, #111 0%, #1a1a1a 100%);
-  border-radius: 12px;
+  border-radius: 20px;
   padding: 20px;
   text-align: center;
-  width: 380px;
+  width: 380px; 
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
-  border: 1px solid #333; /* leve borda iluminada */
+  border: 1px solid #333;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -75,7 +75,7 @@ main {
 }
 
 .time p {
-  font-size: clamp(14px, 2vw, 16px); /* responsivo */
+  font-size: clamp(14px, 2vw, 16px);
   color: #fff;
   margin-top: 8px;
 }
@@ -111,7 +111,7 @@ main {
 
 /* 🔷 PRÓXIMOS JOGOS */
 .jogos-container {
-  background: linear-gradient(180deg, #111 0%, #1a1a1a 100%);
+  background: linear-gradient(100deg, #111 0%, #1a1a1a 100%);
   border-radius: 12px;
   padding: 20px;
   width: 350px;
@@ -153,7 +153,7 @@ main {
 }
 
 .jogo-card h2 {
-  font-size: clamp(13px, 1.8vw, 15px); /* responsivo */
+  font-size: clamp(13px, 1.8vw, 15px);
   margin: 10px 0;
   color: #fff;
 }
@@ -215,3 +215,5 @@ main {
     font-size: 22px;
   }
 }
+
+/* 🔷 OBSERVAÇÃO: O MENU HAMBÚRGUER PERMANECE INTACTO, SEM ALTERAÇÕES */
