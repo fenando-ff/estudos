@@ -1,186 +1,217 @@
-/* 🔷 Reset e fonte padrão */
+/* 🎨 RESET GERAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* 🔷 COR DE FUNDO GERAL */
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: #0d0d0d;
-  color: #ffffff;
-}
-
-/* 🔷 Rodapé */
-footer {
-  background-color: #161616;
-  color: #ffffff;
-  text-align: center;
-  padding: 10px;
-  margin-top: 40px;
-}
-
-footer .redes-sociais a {
-  color: #ffffff;
-  margin: 0 8px;
-  font-size: 1.2rem;
-}
-
-/* 🔷 Estilo geral do conteúdo principal */
-main {
-  padding: 20px;
-  min-height: 80vh;
+  background-color: #000; /* preto total */
+  color: #fff;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+/* 🔷 CONTEÚDO PRINCIPAL */
+main {
+  flex: 1;
+  background-color: #000; /* fundo preto total */
+  display: flex;
+  justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
-main h1 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2rem;
-  color: #8F0000;
-}
-
-.titulo-secundario {
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #ffffff;
-  margin: 40px 0 20px 0;
-}
-
-/* 🔷 Destaque do próximo jogo */
-.jogo-destaque {
-  background-color: #1a1a1a;
-  border-radius: 12px;
-  padding: 30px 20px;
-  max-width: 600px;
+/* 🔷 SEÇÃO DE JOGOS */
+.jogos-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
   width: 100%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  text-align: center;
+  max-width: 1200px;
 }
 
-.rodada {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #8F0000;
-  margin-bottom: 20px;
+/* 🔷 JOGO EM DESTAQUE */
+.jogo-destaque {
+  background: linear-gradient(180deg, #111 0%, #1a1a1a 100%);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 380px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  border: 1px solid #333; /* leve borda iluminada */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.jogo-destaque:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
+}
+
+.jogo-destaque .rodada {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .confronto {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 30px;
-  margin-bottom: 20px;
+  margin: 15px 0;
 }
 
 .time {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 .time img {
   width: 70px;
   height: 70px;
-  object-fit: contain;
 }
 
 .time p {
+  font-size: clamp(14px, 2vw, 16px); /* responsivo */
+  color: #fff;
   margin-top: 8px;
-  font-weight: bold;
-  color: #ffffff;
 }
 
 .versus {
-  font-size: 2rem;
+  font-size: clamp(22px, 3vw, 26px);
+  color: #f00;
   font-weight: bold;
-  color: #8F0000;
 }
 
 .info-jogo {
-  font-size: 1rem;
-  color: #cccccc;
-  margin: 5px 0;
+  color: #ccc;
+  margin-top: 6px;
+  font-size: 14px;
 }
 
 .btn-proximo {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #8F0000;
-  color: #ffffff;
+  margin-top: 15px;
+  background-color: #f00;
+  color: #fff;
+  padding: 10px 20px;
   text-decoration: none;
   border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: 0.3s;
 }
 
 .btn-proximo:hover {
-  background-color: #a80000;
+  background-color: #c00;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
 }
 
-/* 🔷 Cards dos jogos futuros */
+/* 🔷 PRÓXIMOS JOGOS */
 .jogos-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
+  background: linear-gradient(180deg, #111 0%, #1a1a1a 100%);
+  border-radius: 12px;
+  padding: 20px;
+  width: 350px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  border: 1px solid #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.jogos-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
+}
+
+.titulo-secundario {
+  color: #f00;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .jogo-card {
-  background-color: #1a1a1a;
-  border: 1px solid #333;
+  background: #000;
+  padding: 15px;
   border-radius: 8px;
-  width: 90%;
-  max-width: 600px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
+  margin-bottom: 15px;
+  text-align: center;
+  border: 1px solid #222;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .jogo-card:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.3);
+}
+
+.jogo-card img {
+  width: 60px;
+  height: 60px;
 }
 
 .jogo-card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #8F0000;
+  font-size: clamp(13px, 1.8vw, 15px); /* responsivo */
+  margin: 10px 0;
+  color: #fff;
 }
 
 .jogo-card p {
-  font-size: 1rem;
-  margin: 5px 0;
-  color: #cccccc;
+  color: #bbb;
+  font-size: 13px;
 }
 
 .btn-comprar {
   display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #8F0000;
-  color: #ffffff;
+  margin-top: 10px;
+  background-color: #f00;
+  color: #fff;
+  padding: 8px 15px;
   text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  border-radius: 6px;
+  transition: 0.3s;
 }
 
 .btn-comprar:hover {
-  background-color: #a80000;
+  background-color: #c00;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
 }
 
-/* 🔷 Responsivo para telas maiores */
-@media screen and (min-width: 768px) {
+/* 🔷 RODAPÉ */
+.rodape {
+  background: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #111;
+}
+
+.redes-sociais a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.redes-sociais a:hover {
+  color: #f00;
+}
+
+/* 🔷 RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .jogo-destaque,
   .jogos-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 90%;
   }
 
-  .jogo-card {
-    width: 45%;
+  .confronto {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .versus {
+    font-size: 22px;
   }
 }
