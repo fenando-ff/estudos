@@ -509,10 +509,16 @@ a {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-    }
+    }    
 
     .container-cards .card {
         width: 45%;
+        transition: 0.3s;
+    }
+
+    .container-cards .card:hover {
+        cursor: pointer;
+        scale: 1.1;
     }
 
     .card3 img { 
@@ -544,6 +550,7 @@ a {
     .manchete .texto-noticia, .carrossel-noticia {
         height: 16rem;
     }
+
 
 }
 
