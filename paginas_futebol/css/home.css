@@ -236,13 +236,13 @@ a {
 /* Tabela */
 .tabelaBrasileirao {
     flex: 1;
+
 }
 
 .tabelaBrasileirao h1,.tabelaBrasileirao #subtituloTabela {
     text-align: center;
     color: #9e2121;
     text-transform: uppercase;
-    width: 20%;
     margin: auto;
 }
 
@@ -271,9 +271,8 @@ a {
 }
 
 .classificacao {
-    list-style: none;
-    width: 50%;
-    margin: auto;;
+    width: 95%;
+    margin: auto;
 }
 
 .card-tabela {
@@ -515,24 +514,28 @@ a {
         width: 45%;
         transition: 0.3s;
     }
-
+    
     .container-cards .card:hover {
         cursor: pointer;
         scale: 1.1;
     }
-
+    
     .card3 img { 
         width: 20%; 
     }
-
+    
     .proximo-jogo .proximo-jogo-versus { 
         width: 80%; 
     }
-
+    
     .info-jogo .dia-hora-info-jogo { 
         font-size: 28px; 
     }
-
+    
+    .classificacao{
+        height: 50rem;
+    }
+    
     .manchete{
         margin: auto;
         flex-direction: row;
@@ -542,7 +545,7 @@ a {
     .manchete .texto-noticia {
         width: 50%;
     }
-
+    
     .carrossel-noticia .slide{
         margin-bottom: 12px;
     }
@@ -588,6 +591,7 @@ a {
     .info-jogo .dia-hora-info-jogo {
         font-size: 32px; 
     }
+
 }
 
 /* ==============================
